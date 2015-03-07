@@ -7,7 +7,7 @@ url: "http://extrawurst.github.io"
 #baseurl: "/contrast" # comment out if in root directory
 
 comments:
-    disqus: "stephan_dilly"
+    disqus: "extrawurst"
 #    isso: "comments.mysite.org"
 
 style:
