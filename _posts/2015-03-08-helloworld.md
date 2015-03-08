@@ -1,20 +1,12 @@
 ---
 title:  "Hello World"
-date:   2015-03-08 00:33:00
-categories: misc
+date:   2015-03-08 14:00:00
+categories: general,dlang
 ---
-
-**Hello World**
-
+So this is my new blog driven by github-pages.
 {% highlight d %}
-
-module unecht.appmain;
-
-int main()
-{
-	import unecht;
-
-	return ue.application.run();
+void main(){
+	import std.stdio:writeln;
+	writeln("hello world");
 }
-
 {% endhighlight %}
