@@ -25,7 +25,7 @@ Then I browsed jekyll themes here: [http://jekyllthemes.org/](http://jekylltheme
 
 Finally I choose one and simply forked it on github - nifty!
 
-To be able to test the site and write posts locally befor committing jekyll is easy to setup: 
+To be able to test the site and write posts locally befor committing you can setup jekyll on your machine: 
 
 {% highlight sh %}
 ~ $ gem install jekyll
