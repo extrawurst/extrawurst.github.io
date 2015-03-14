@@ -25,10 +25,12 @@ style:
 links:
   - github: "https://github.com/extrawurst"
   - twitter: "https://twitter.com/extrawurst"
-#  - google-plus: "https://plus.google.com/+me"
-#  - reddit: "https://www.reddit.com/user/me/"
-#  - youtube: "https://www.youtube.com/user/me"
-#  - steam: "http://steamcommunity.com/id/me/"
+  - linkedin: "https://www.linkedin.com/profile/view?id=136842864"
+  - xing: "https://www.xing.com/profile/Stephan_Dilly"
+  - youtube: "https://www.youtube.com/user/ExtrawurstGames"
+#  - facebook: "https://www.facebook.com/pages/Extrawurst/562393190442658"
+  - google-plus: "https://plus.google.com/u/0/+StephanDilly"
+# - steam: 
 
 excerpt_separator: "\n\n\n"
 defaults: [{scope: {path: ""}, values: {layout: "default"}}, {scope: {path: "", type: "posts"}, values: {comments: true}}]
