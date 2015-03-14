@@ -9,6 +9,7 @@ The following stuff is what caught my eye in the last couple of weeks. Consider 
 --- Talk about Efficiency at CppCon2014  ---
 
 Chandler Carruth gave a talk named "Efficiency with Algorithms, Performance with Data Structures" at CppCon2014 that I just recently saw and advice everybody to watch.
+
 <iframe src="//channel9.msdn.com/Events/CPP/C-PP-Con-2014/Efficiency-with-Algorithms-Performance-with-Data-Structures/player" width="960" height="540" allowFullScreen frameBorder="0"></iframe>
 
 He talks about effective algorithms and performance of data structures on modern CPUs in our post-moore's-law-world. He considers Linked-Lists and HashMaps evil and advises us to use std::vector whereever possible. But don't think there is nothing to learn there if you are a java guy!
