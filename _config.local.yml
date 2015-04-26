@@ -1,0 +1,36 @@
+title: "extrawurst's blog"
+author: "Stephan Dilly"
+description: "Thoughts and random opinions of a Software Engineer and Consultant based in Germany"
+#subheading: "Really cool blog about ... something"
+more: "more..."
+url: "http://127.0.0.1:4000"
+#baseurl: "/contrast" # comment out if in root directory
+
+comments:
+    disqus: "extrawurst"
+#    isso: "comments.mysite.org"
+
+style:
+#    body: "whitesmoke"
+    padding: 33%
+    anchor: "#46f"
+    serif-heading: true
+    nav: "#181818"
+#    headline: "#06f"
+    description: "white"
+    article:
+        odd: "#ffffff"
+        even: "#222222"
+
+links:
+  - github: "https://github.com/extrawurst"
+  - twitter: "https://twitter.com/extrawurst"
+  - linkedin: "https://www.linkedin.com/profile/view?id=136842864"
+  - xing: "https://www.xing.com/profile/Stephan_Dilly"
+  - youtube: "https://www.youtube.com/user/ExtrawurstGames"
+#  - facebook: "https://www.facebook.com/pages/Extrawurst/562393190442658"
+  - google-plus: "https://plus.google.com/u/0/+StephanDilly"
+# - steam: 
+
+excerpt_separator: "\n\n\n"
+defaults: [{scope: {path: ""}, values: {layout: "default"}}, {scope: {path: "", type: "posts"}, values: {comments: true}}]
