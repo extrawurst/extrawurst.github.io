@@ -4,7 +4,7 @@ date:   2015-05-28 18:00:00
 categories: [dlang, metaprogramming, imgui]
 ---
 
-What do menus and annotations have to do with the D programming language ?
+What do menus and annotations have to do with the [D programming language](http://dlang.org/) ?
 These three aspects form a very nice little system in my current spare time project of a game engine called [unecht](https://github.com/Extrawurst/unecht).
 
 The whole engine borrows a lot of ideas and concepts from the [Unity3D game engine](http://unity3d.com/) and one of these concepts is the way the editor is extendable through user scripts in a conveniant way.
@@ -56,3 +56,6 @@ The end result is demonstrated here:
 
 Elegant implementations like these allowing such simple designs in the user code are what I like about D.
 Although I am still missing a good getUDA/hasUDA method in the standard library to query for type annotations in D! It is a shame that these are being implemented by everyone in their libraries again and again.
+
+For reference: the GUI itself uses [cimgui](https://github.com/Extrawurst/cimgui) (see my post about cimgui [here]({% post_url 2015-04-26-cimgui %})) wrapped for D based upon the fantastic [imgui](https://github.com/ocornut/imgui) c++ library by omar cornut.
+I am using the about to be released 1.39 version here that supports the new menu API.
