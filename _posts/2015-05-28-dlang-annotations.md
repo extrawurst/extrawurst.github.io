@@ -34,7 +34,9 @@ static void DoSomething () {
 {% endhighlight %}
 
 The only difference is that this code is compiled and that the whole magic for this to work happens at compile time.
-In this implementation though I improved the design for validation functions: In Unity3D those functions are annotated slightly differently and have to be named exactly like the actual method and return a boolean to enable/disable the menu entry. Errors like typos are first caught at runtime with that design.
+In this implementation though I improved the design for validation functions (These functions get called to determine if a certain menu item should be enabled right now).
+Unity3D makes you annotate these functions in a very specific way so that they match the name of the menuItem they correspond to. 
+Errors like typos or a wrong signature are first caught at runtime.
 
 In unecht it is as simple as adding a second parameter to the annotation which has to be another static method that returns a boolean:
 
