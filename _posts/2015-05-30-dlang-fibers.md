@@ -7,9 +7,29 @@ categories: [dlang, gamedev, events, fibers]
 ###D and Fibers
 
 [Fibers](http://dlang.org/phobos/core_thread.html#.Fiber) are D's concept for resumable functions and the barebone behind the popular event driven framework [vibe.d](http://vibed.org/).
+In the [unecht](https://github.com/Extrawurst/unecht) project I recently added a generic system to use resumable functions much like [Unity3D](http://unity3d.com/) supports it using their [coroutine system](http://docs.unity3d.com/Manual/Coroutines.html).
+In Unity3D a simple usage example is this:
+
+{% highlight csharp %}
+IEnumerator DeferedPrint() {
+    Debug.Log("hello");
+    yield return new WaitForSeconds(1f);
+    Debug.Log("... 1s later");
+}
+// start the coroutine:
+StartCoroutine(DeferedPrint);
+{% endhighlight %}
+
+The same behaviour in D and unecht looks like this:
+
+{% highlight d %}
+void DeferedPrint() {
+    writefln("hello");
+    yield return new WaitForSeconds(1f);
+    writefln("... 1s later");
+}
+{% endhighlight %}
 
 ###Lightweight Eventloop
 
-blabla 
-
-###Unecht
+The eventloop necessary to allow this is simply resuming all active fibers each frame. The main addition to the Fibers in the standard library is that each Fiber can have a child Fiber that has to finish before the parent Fiber can resume. This way the Timer is realized.
