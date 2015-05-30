@@ -6,7 +6,7 @@ categories: [dlang, gamedev, events, fibers]
 
 ###D and Fibers
 
-blabla 
+[Fibers](http://dlang.org/phobos/core_thread.html#.Fiber) are D's concept for resumable functions and the barebone behind the popular event driven framework [vibe.d](http://vibed.org/).
 
 ###Lightweight Eventloop
 
