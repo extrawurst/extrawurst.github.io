@@ -25,7 +25,7 @@ The same behaviour in D and unecht looks like this:
 {% highlight d %}
 void DeferedPrint() {
     writefln("hello");
-    UEFibers.yield(waitFiber!"2.seconds");
+    UEFibers.yield(waitFiber!"1.seconds");
     writefln("... 1s later");
 }
 // start the fiber:
@@ -36,7 +36,7 @@ UEFibers.startFiber(DeferedPrint);
 
 The eventloop necessary to allow this is simply resuming all active fibers each frame. 
 The main addition to the Fibers in the standard library is that each Fiber can have a child Fiber that has to finish before the parent Fiber can resume. 
-This way the Timer is realized.
+Following code shows a practical example:
 
 {% highlight d %}
 @MenuItem("test/deleteAll")
