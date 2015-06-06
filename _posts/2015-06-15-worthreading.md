@@ -12,8 +12,8 @@ The following stuff is what caught my eye in the last couple of weeks. Consider 
 
 ###Book: "Game Engine Architecture"
 
-TODO
+[book at amazon](http://www.amazon.com/Engine-Architecture-Second-Jason-Gregory/dp/1466560010)
 
 ###Book: "Game Programming Patterns"
 
-TODO
+[book at amazon](http://www.amazon.com/Game-Programming-Patterns-Robert-Nystrom/dp/0990582906)
