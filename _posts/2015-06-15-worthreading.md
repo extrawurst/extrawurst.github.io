@@ -6,8 +6,9 @@ categories: [reading]
 
 The following stuff is what caught my eye in the last couple of weeks. Consider this post an entry in my personal knowledge base ;)
 
-###Talk: Scott Mayers
+###Talk: Scott Meyers
 
+Presentations by Scott Meyers are always entertaining. This one is kind of a meta presentation by him cause it is not 100% about c++ specifics (again) but about how to present to an expert audience, how to write a book and how to transport a message in a convincing and captivating way. And of course it shows yet again some c++ guts that only amazes :D
 [video](https://www.youtube.com/watch?v=smqT9Io_bKo)
 
 ###Book: "Game Engine Architecture"
