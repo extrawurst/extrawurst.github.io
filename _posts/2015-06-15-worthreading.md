@@ -18,3 +18,8 @@ Presentations by Scott Meyers are always entertaining. This one is kind of a met
 ###Book: "Game Programming Patterns"
 
 [book at amazon](http://www.amazon.com/Game-Programming-Patterns-Robert-Nystrom/dp/0990582906)
+
+###Post: "Mercurial at Unity"
+
+Na'tosha Bard writes about the large scale usage of mercurial at Unity and how it improved their workflows and productivity:
+[blog post](http://natoshabard.com/post/122632480712/mercurial-at-unity)
