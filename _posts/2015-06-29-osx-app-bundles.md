@@ -62,8 +62,8 @@ The next problem was how to do this in dland? Well actually pretty straight forw
 
 To be able to use the system libs you need to have bindings which I created (with JUST the functionality needed for this case, so please feel free to add and PR):
 
-[dub package](http://code.dlang.org/packages/derelict-cf)
-[github repository](https://github.com/Extrawurst/DerelictCF)
+* [dub package](http://code.dlang.org/packages/derelict-cf)
+* [github repository](https://github.com/Extrawurst/DerelictCF)
 
 Using these bindings we can do the exact same as in the c++ example above and change the working directory appropriately after app start.
 
