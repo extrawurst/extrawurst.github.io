@@ -34,7 +34,7 @@ So here I was with my icon PNG and found these instructions to convert it to the
 
 Now we have an app logo and still need to fix the dependencies...
 
-### How to find locations inside an app bundle
+### How to find locations inside an of app bundle
 
 So the last bastion was to use the bundle to bundle up the necessary frameworks and dependencies with it. This allows us to save the user the trouble of installing all kinds of libs and maybe even having to built libs them selves.
 
