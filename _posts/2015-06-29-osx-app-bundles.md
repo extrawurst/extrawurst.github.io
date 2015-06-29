@@ -66,6 +66,7 @@ To be able to use the system libs you need to have bindings which I created (wit
 * [github repository](https://github.com/Extrawurst/DerelictCF)
 
 Using these bindings we can do the exact same as in the c++ example above and change the working directory appropriately after app start.
+Now we are finished, we can use whatevery content we bundle up in the app and give it an icon image!
 
 ### "Bundle Programming Guide"
 
