@@ -28,6 +28,11 @@ std::cout << "Current Path: " << path << std::endl;
 
 [SO Thread](http://stackoverflow.com/a/520951/2458533)
 
+### CoreFoundation library bindings for D
+
+[dub package](http://code.dlang.org/packages/derelict-cf)
+[github repository](https://github.com/Extrawurst/DerelictCF)
+
 ### "Bundle Programming Guide"
 
 The rest of the info needed can be found in the official docs by Apple: [bundle programming guide](https://developer.apple.com/library/mac/documentation/CoreFoundation/Conceptual/CFBundles/Introduction/Introduction.html)
