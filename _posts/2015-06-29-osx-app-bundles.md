@@ -34,9 +34,9 @@ So here I was with my icon PNG and found these instructions to convert it to the
 
 Now we have an app logo and still need to fix the dependencies...
 
-### How to find locations inside an of app bundle
+### How to find locations inside app bundles
 
-So the last bastion was to use the bundle to bundle up the necessary frameworks and dependencies with it. This allows us to save the user the trouble of installing all kinds of libs and maybe even having to built libs them selves.
+So the last bastion was to use the bundle to bundle up the necessary frameworks and dependencies with it. This allows us to save the user the trouble of installing all kinds of libs and maybe even having to built libs themselves.
 
 Since we use dynamic bindings of libs like SDL the binary of our app looks for those *.dylib files in system folders and near the executable itself. The problem is that even though the bundle is just a folder the current directory maybe total different and in this current working dir it is where the bindings look for the dynlib files.
 
@@ -66,7 +66,7 @@ To be able to use the system libs you need to have bindings which I created (wit
 * [github repository](https://github.com/Extrawurst/DerelictCF)
 
 Using these bindings we can do the exact same as in the c++ example above and change the working directory appropriately after app start.
-Now we are finished, we can use whatevery content we bundle up in the app and give it an icon image!
+Now we are finished, we can use whatever content we bundle up in the app and give it an icon image!
 
 ### "Bundle Programming Guide"
 
