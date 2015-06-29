@@ -11,13 +11,15 @@ The following stuff is what caught my eye in the last couple of weeks. Consider 
 Presentations by Scott Meyers are always entertaining. 
 This one is kind of a meta presentation by him cause it is not 100% about c++ specifics but about how to present to an expert audience. 
 He talks about how to write a book and how to transport a message in a convincing and captivating way. And of course it shows yet again some c++ guts that only amaze :D
-[video](https://www.youtube.com/watch?v=smqT9Io_bKo)
+
+[talk on youtube](https://www.youtube.com/watch?v=smqT9Io_bKo)
 
 ###Book: "Game Engine Architecture"
 
 This particular book written by Jason Gregory - an industry veteran - is new on my shelf and very good for beginner and intermediate game engine developers. 
 I found bits and pieces in every chapter that were new to me and consider this good reference material.
 Jason Gregory covers an amazing broad spectrum and shows further readings for most of the in depth details that cannot be covered in such a compendium.
+
 [book at amazon](http://www.amazon.com/Engine-Architecture-Second-Jason-Gregory/dp/1466560010)
 
 ###Book: "Game Programming Patterns"
@@ -27,6 +29,7 @@ This book is a must read for every game programmer - well every programmer in ge
 The author Robert Nystrom wraps up reusable patterns in such a crystal clear way that it is very worth your time. His analytical way and attitude to always improve professionally are an inspiration. No buzzwording, no nonesense - just applicable ideas and the motivation behind them. Every word in this book shows that this piece was not written by someone in an ivory tower but a dry pragmatist who openly took feedback and incorporated it even in very early stages of the book. One could argue that this book was a community effort.
 
 The highlights in short:
+
 * distilled knowledge based on years of professional game development
 * good structured chapters
 * thoughtful examples
