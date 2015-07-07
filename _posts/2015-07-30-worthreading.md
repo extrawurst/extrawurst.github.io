@@ -6,9 +6,9 @@ categories: [reading]
 
 The following stuff is what caught my eye in the last couple of weeks. Consider these kind of posts as an entry in my personal knowledge base ;)
 
-###Talk: "Democratizing Multiplayer Development - Unite Europe 2015"
+###Post: "How to Use Docker on OS X: The Missing Guide"
 
-[talk on youtube](https://www.youtube.com/watch?v=gZbbYXzyXKk)
+[blog post](http://viget.com/extend/how-to-use-docker-on-os-x-the-missing-guide)
 
 ###Profilig
 
