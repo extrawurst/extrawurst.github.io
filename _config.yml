@@ -32,5 +32,8 @@ links:
   - google-plus: "https://plus.google.com/u/0/+StephanDilly"
 # - steam: 
 
+gems:
+  - jekyll-sitemap
+
 excerpt_separator: "\n\n\n"
 defaults: [{scope: {path: ""}, values: {layout: "default"}}, {scope: {path: "", type: "posts"}, values: {comments: true}}]
