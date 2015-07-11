@@ -15,10 +15,14 @@ The following stuff is what caught my eye in the last couple of weeks. Consider 
 [lukestackwalker](http://lukestackwalker.sourceforge.net/)
 [brofiler](http://brofiler.com/)
 
-###Command line tutorial
+###Github: Command line tutorial
 
 [art of command line](https://github.com/jlevy/the-art-of-command-line)
 
-###Terminal recorder
+###Github: Terminal recorder
 
 [ttystudio](https://github.com/chjj/ttystudio)
+
+###Github: "list of graphic programming resources"
+
+[github project](https://github.com/mattdesl/graphics-resources)
