@@ -26,3 +26,17 @@ The following stuff is what caught my eye in the last couple of weeks. Consider 
 ###Github: "list of graphic programming resources"
 
 [github project](https://github.com/mattdesl/graphics-resources)
+
+### "64 Network DO’s and DON’Ts for Game Engine Developers"
+
+This great article series on [ITHare.com](http://ithare.com/) consists of:
+
+* [Part I: Client Side](http://ithare.com/64-network-dos-and-donts-for-game-engine-developers-part-i-client-side/)
+* [Part IIa: Protocols and APIs](http://ithare.com/64-network-dos-and-donts-for-game-engine-developers-part-iia-protocols-and-apis/)
+* [Part IIb: Protocols and APIs (continued)](http://ithare.com/64-network-dos-and-donts-for-game-engine-developers-part-iib-protocols-and-apis-continued/)
+* [Part IIIa: Server-Side (Store-Process-and-Forward Architecture)](http://ithare.com/64-network-dos-and-donts-for-game-engines-part-iiia-server-side-store-process-and-forward-architecture/)
+* [Part IIIb: Server-Side (deployment, optimizations, and testing)](http://ithare.com/64-network-dos-and-donts-for-game-engines-part-iiib-server-side-deployment-optimizations-and-testing/)
+* [Part IV: Great TCP-vs-UDP Debate](http://ithare.com/64-network-dos-and-donts-for-game-engines-part-iv-great-tcp-vs-udp-debate/)
+* [Part V: UDP](http://ithare.com/64-network-dos-and-donts-for-game-engines-part-v-udp/)
+* [Part VI: TCP](http://ithare.com/64-network-dos-and-donts-for-multi-player-game-developers-part-vi-tcp/)
+* [Part VIIa: Security (TLS/SSL)](http://ithare.com/64-network-dos-and-donts-for-multi-player-game-developers-part-viia-security-tls-ssl/)
