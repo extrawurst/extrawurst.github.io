@@ -40,3 +40,10 @@ This great article series on [ITHare.com](http://ithare.com/) consists of:
 * [Part V: UDP](http://ithare.com/64-network-dos-and-donts-for-game-engines-part-v-udp/)
 * [Part VI: TCP](http://ithare.com/64-network-dos-and-donts-for-multi-player-game-developers-part-vi-tcp/)
 * [Part VIIa: Security (TLS/SSL)](http://ithare.com/64-network-dos-and-donts-for-multi-player-game-developers-part-viia-security-tls-ssl/)
+
+### entypo.com
+
+Thanks to Ray for hinting me to this very nice compilation of free cc-licenced vector graphics:
+
+<blockquote class="twitter-tweet" data-partner="tweetdeck"><p lang="en" dir="ltr">Useful&#10;<a href="http://t.co/K8vr0i4dIr">http://t.co/K8vr0i4dIr</a> <a href="http://t.co/jrDrsIcQO1">pic.twitter.com/jrDrsIcQO1</a></p>&mdash; Ray François (@MutantSparrow) <a href="https://twitter.com/MutantSparrow/status/620936370345914368">July 14, 2015</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
