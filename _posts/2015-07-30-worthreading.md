@@ -41,6 +41,10 @@ This great article series on [ITHare.com](http://ithare.com/) consists of:
 * [Part VI: TCP](http://ithare.com/64-network-dos-and-donts-for-multi-player-game-developers-part-vi-tcp/)
 * [Part VIIa: Security (TLS/SSL)](http://ithare.com/64-network-dos-and-donts-for-multi-player-game-developers-part-viia-security-tls-ssl/)
 
+###Post: "Fast-Paced Multiplayer"
+
+[Gabriel Gambetta's posts](http://www.gabrielgambetta.com/fast_paced_multiplayer.html)
+
 ### entypo.com
 
 Thanks to Ray for hinting me to this very nice compilation of free cc-licenced vector graphics:
