@@ -31,7 +31,7 @@ The project page says it can "Record your terminal and compile it to a GIF or AP
 
 [ttystudio](https://github.com/chjj/ttystudio)
 
-### "64 Network DO’s and DON’Ts for Game Engine Developers"
+###Articles: "64 Network DO’s and DON’Ts for Game Engine Developers"
 
 This extensive article series on [ITHare.com](http://ithare.com/) consists of the following parts and is very well written and full of interesting and practical working experience:
 
