@@ -11,3 +11,7 @@ The following stuff is what caught my eye in the last couple of weeks. Consider 
 [Amazon.com link](http://www.amazon.com/Endurance-Shackletons-Incredible-Alfred-Lansing/dp/0465062881)
 
 This book by Alfred Lansing was absolutely stunning. Both a great adventure and a documentary about one of the most spectacular expeditions in modern history. It tells the story of an trans-antartic expedition turned into an breathtaking adventure of an inspiring leader trying to save the lives of his crew. This story is not only tense and freaking real it is an extraordinary example of good leadership!
+
+###Blog Post: 
+
+[Blog Post](http://jakubstas.com/springsource-certified-spring-professional)
