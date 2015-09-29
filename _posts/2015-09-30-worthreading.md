@@ -12,6 +12,12 @@ The following stuff is what caught my eye in the last couple of weeks. Consider 
 
 This book by Alfred Lansing was absolutely stunning. Both a great adventure and a documentary about one of the most spectacular expeditions in modern history. It tells the story of an trans-antartic expedition turned into an breathtaking adventure of an inspiring leader trying to save the lives of his crew. This story is not only tense and freaking real it is an extraordinary example of good leadership!
 
-###Blog Post: 
+###Post: 
 
 [Blog Post](http://jakubstas.com/springsource-certified-spring-professional)
+
+###Post: "Using Google Protocol Buffers with Spring MVC-based REST Services"
+
+Note: Maybe worth mentioning to be sure to add maven project "protobuf-java-format" into the dependencies to be actually able to convert proto results to json etc.
+
+[Spring.io Post](https://spring.io/blog/2015/03/22/using-google-protocol-buffers-with-spring-mvc-based-rest-services)
