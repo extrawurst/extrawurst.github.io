@@ -21,3 +21,12 @@ This book by Alfred Lansing was absolutely stunning. Both a great adventure and 
 Note: Maybe worth mentioning to be sure to add maven project "protobuf-java-format" into the dependencies to be actually able to convert proto results to json etc.
 
 [Spring.io Post](https://spring.io/blog/2015/03/22/using-google-protocol-buffers-with-spring-mvc-based-rest-services)
+
+###Project Updates:
+
+https://github.com/Extrawurst/file2d
+used for an example project here:
+https://github.com/Extrawurst/DerelictFmod
+
+also new:
+https://github.com/Extrawurst/bgfxd-examples
