@@ -30,3 +30,7 @@ https://github.com/Extrawurst/DerelictFmod
 
 also new:
 https://github.com/Extrawurst/bgfxd-examples
+
+###Link:
+Promising free sound lib:
+[SoLoud](http://sol.gfxile.net/soloud/index.html)
