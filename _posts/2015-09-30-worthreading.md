@@ -34,3 +34,7 @@ https://github.com/Extrawurst/bgfxd-examples
 ###Link:
 Promising free sound lib:
 [SoLoud](http://sol.gfxile.net/soloud/index.html)
+
+###Post: es_core a nice little engine concept
+
+[es_core blog post](http://ttimo.typepad.com/blog/2013/05/es_core-an-experimental-framework-for-low-latency-high-fps-multiplayer-games.html)
