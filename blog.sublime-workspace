@@ -1,0 +1,428 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"buf",
+				"buf_size"
+			],
+			[
+				"ex",
+				"extra_flags"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 347.0,
+		"last_filter": "Package Control: ",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/stephan/Documents/_gh/extrawurst.github.io"
+	],
+	"file_history":
+	[
+		"/Users/stephan/Documents/_gh/extrawurst.github.io/_posts/2015-12-25-worthreading.md",
+		"/Users/stephan/Documents/_gh/DerelictFmod/source/app.d",
+		"/Users/stephan/Documents/_bb/stack4/src/unity/Assets/stack4/scenes/ui/uisingleplayer.unity.meta",
+		"/Users/stephan/Documents/_bb/stack4/src/unity/Assets/stack4/scenes/ui/uihud.unity.meta",
+		"/Users/stephan/Documents/_bb/stack4/src/unity/Assets/stack4/scenes/ui/uimain.unity.meta",
+		"/Users/stephan/Documents/_bb/stack4/src/unity/Assets/stack4/scenes/root.unity.meta",
+		"/Users/stephan/Documents/_bb/stack4/src/unity/Assets/stack4/scripts/ui/views/UiViewDialog.cs.meta",
+		"/Users/stephan/Documents/_bb/stack4/src/unity/Assets/stack4/scripts/ui/views/UiViewHud.cs.meta",
+		"/Users/stephan/Documents/_bb/stack4/src/unity/ProjectSettings/ProjectSettings.asset",
+		"/Users/stephan/Documents/inno/gxv_client/unity/IAS/smcs.rsp",
+		"/Users/stephan/Downloads/tkd-master/package.json",
+		"/Users/stephan/Documents/inno/gxv_client/unity/IAS/ProjectSettings/EditorBuildSettings.asset",
+		"/Users/stephan/Downloads/UI-Fast-Default.shader",
+		"/Users/stephan/Documents/_bb/stack4/src/unity/ObjectGraph.dot",
+		"/Users/stephan/Documents/_gh/DerelictFmod/README.md",
+		"/Users/stephan/Documents/_gh/DerelictFmod/source/derelict/fmodstudio/funcs.d",
+		"/Users/stephan/Documents/_gh/DerelictFmod/source/derelict/fmodstudio/fmodstudio.d",
+		"/Users/stephan/Documents/_gh/DerelictFmod/source/derelict/fmodstudio/common.d",
+		"/Users/stephan/Documents/_gh/DerelictFmod/source/derelict/fmod/output.d",
+		"/Users/stephan/Documents/_gh/DerelictFmod/source/derelict/fmod/funcs.d",
+		"/Users/stephan/Documents/_gh/DerelictFmod/source/derelict/fmod/fmod.d",
+		"/Users/stephan/Documents/_gh/DerelictFmod/source/derelict/fmod/error.d",
+		"/Users/stephan/Documents/_gh/DerelictFmod/source/derelict/fmod/dsp_effects.d",
+		"/Users/stephan/Documents/_gh/DerelictFmod/source/derelict/fmod/dsp.d",
+		"/Users/stephan/Documents/_gh/DerelictFmod/source/derelict/fmod/common.d",
+		"/Users/stephan/Documents/_gh/DerelictFmod/source/derelict/fmod/codec.d",
+		"/Users/stephan/Documents/_bb/docs/Lebenslauf/en/main.tex",
+		"/Users/stephan/Desktop/app.d",
+		"/Users/stephan/Documents/_gh/unecht/samples/steamworkstest/dub.json",
+		"/Users/stephan/Documents/_gh/unecht/dub.json",
+		"/Users/stephan/Downloads/cl4d-master/dub.json",
+		"/Users/stephan/Downloads/cl4d-master/cl4d/c/cl.d",
+		"/Users/stephan/Documents/_bb/stack4/src/config.stack4.de/changes.txt",
+		"/Users/stephan/Downloads/cl4d-master/cl4d/c/opencl.d",
+		"/Users/stephan/Downloads/cl4d-master/cl4d/c/cl_platform.d",
+		"/Users/stephan/Downloads/cl4d-master/common.d",
+		"/Users/stephan/Documents/_bb/stack4/src/unity/Assets/Plugins/EX/SimpleRand.cs",
+		"/Users/stephan/Documents/_gh/extrawurst.github.io/_posts/2015-10-30-update.md",
+		"/Users/stephan/Documents/_gh/apn-d/README.md",
+		"/Users/stephan/Documents/_gh/apn-d/dub.selections.json",
+		"/Users/stephan/Documents/_bb/s4server/src/vibe/s4db/dub.json",
+		"/Users/stephan/Documents/_bb/s4server/src/vibe/s4botservice/dub.json",
+		"/Users/stephan/Documents/_bb/s4server/src/vibe/s4shared/dub.json",
+		"/Users/stephan/Documents/_gh/bx/include/bx/fpumath.h",
+		"/Users/stephan/Documents/_gh/bgfx/examples/03-raymarch/raymarch.cpp",
+		"/Users/stephan/Documents/_bb/s4server/src/vibe/s4server/dub.json",
+		"/Users/stephan/Downloads/websocket-sharp-master/websocket-sharp/websocket-sharp.csproj",
+		"/Users/stephan/Documents/inno/gxv_prototyping/prototest/protolib/person.cs",
+		"/Users/stephan/Documents/_gh/extrawurst.github.io/_posts/2015-10-23-protobuf-in-unity.md",
+		"/Users/stephan/Documents/inno/gxv_client/.gitignore",
+		"/Users/stephan/Documents/_gh/unecht/samples/helloworld/dub.json",
+		"/Users/stephan/Documents/_gh/extrawurst.github.io/_posts/2015-09-30-worthreading.md",
+		"/Users/stephan/Documents/_gh/unecht/samples/soundtest/source/app.d",
+		"/Users/stephan/Downloads/spring-and-google-protocol-buffers-master/src/main/java/demo/DemoApplication.java",
+		"/Users/stephan/Downloads/spring-and-google-protocol-buffers-master/src/main/java/demo/CustomerProtos.java",
+		"/Users/stephan/Documents/_gh/bgfx/examples/02-metaballs/metaballs.cpp",
+		"/Users/stephan/Documents/_gh/bgfx/include/bgfx.h",
+		"/Users/stephan/Documents/_gh/unecht/source/unecht/core/defaultInspector.d",
+		"/Users/stephan/Documents/_gh/unecht/source/unecht/core/serialization/serializer.d",
+		"/Users/stephan/Documents/_gh/unecht/source/unecht/core/serialization/sceneSerialization.d",
+		"/Users/stephan/Documents/_gh/unecht/source/unecht/meta/misc.d",
+		"/Users/stephan/Documents/_gh/unecht/source/unecht/core/serialization/mixins.d",
+		"/Users/stephan/Documents/_gh/DerelictFmodStudio/README.md",
+		"/Users/stephan/Documents/_gh/bgfx/examples/common/bgfx_utils.cpp",
+		"/Users/stephan/Documents/_gh/bgfx/examples/common/entry/entry.cpp",
+		"/Users/stephan/Documents/_gh/bgfx/examples/01-cubes/cubes.cpp",
+		"/Users/stephan/Documents/_gh/bgfx/src/bgfx_p.h",
+		"/Users/stephan/Documents/_gh/bgfx/src/config.h",
+		"/Users/stephan/Documents/_gh/bgfx/examples/02-metaballs/vs_metaballs.bin.h",
+		"/Users/stephan/Documents/_gh/bgfx/src/glcontext_glx.h",
+		"/Users/stephan/Documents/_gh/bx/include/bx/config.h",
+		"/Users/stephan/Documents/_gh/bx/include/bx/readerwriter.h",
+		"/Users/stephan/Documents/_gh/bgfx/examples/common/bgfx_utils.h",
+		"/Users/stephan/Documents/_gh/bx/include/bx/hash.h",
+		"/Users/stephan/Documents/_gh/bgfx/examples/common/common.h",
+		"/Users/stephan/Documents/_gh/bgfx/src/renderer_gl.cpp",
+		"/Users/stephan/Documents/_gh/bgfxd-examples/.gitignore",
+		"/Users/stephan/Documents/_gh/bgfx/include/bgfxplatform.c99.h",
+		"/Users/stephan/Documents/_gh/bgfx/include/bgfxplatform.h",
+		"/Users/stephan/Documents/_gh/bgfx/examples/common/entry/entry.h",
+		"/Users/stephan/Documents/_gh/bgfx/include/bgfx.c99.h",
+		"/Users/stephan/Documents/_bb/fmod/inc/fmod_studio.h",
+		"/Users/stephan/Documents/_bb/fmod/inc/fmod_studio_common.h",
+		"/Users/stephan/Documents/_bb/fmod/inc/fmod_studio.hpp",
+		"/Users/stephan/Documents/_bb/fmod/update.sh",
+		"/Users/stephan/Documents/_gh/bgfx/makefile",
+		"/Users/stephan/Documents/_gh/bgfx/examples/00-helloworld/helloworld.cpp",
+		"/Users/stephan/Documents/_gh/bgfx/examples/common/entry/entry_glfw.cpp",
+		"/Users/stephan/Documents/_bb/steamworks/public/steam/steam_api.h",
+		"/Users/stephan/Documents/_bb/steamworks/public/steam/isteamutils.h",
+		"/Users/stephan/Documents/_bb/steamworks/public/steam/isteamfriends.h",
+		"/Users/stephan/Documents/_bb/steamworks/public/steam/steam_api_flat.h",
+		"/Users/stephan/Documents/_gh/DerelictSteamworks/source/app.d",
+		"/Users/stephan/Documents/_bb/steamworks/public/steam/isteamuser.h",
+		"/Users/stephan/Documents/_bb/steamworks/public/steam/isteamscreenshots.h",
+		"/Users/stephan/Documents/_bb/steamworks/public/steam/isteamuserstats.h",
+		"/Users/stephan/Documents/_bb/steamworks/public/steam/isteamgameserver.h",
+		"/Users/stephan/Documents/_bb/steamworks/public/steam/isteammatchmaking.h",
+		"/Users/stephan/Documents/_bb/steamworks/public/steam/steamclientpublic.h",
+		"/Users/stephan/Documents/_bb/steamworks/public/steam/isteaminventory.h",
+		"/Users/stephan/Documents/_bb/steamworks/public/steam/isteamugc.h",
+		"/Users/stephan/Documents/_bb/steamworks/public/steam/steam_api_interop.cs",
+		"/Users/stephan/Documents/_bb/steamworks/public/steam/isteamhtmlsurface.h",
+		"/Users/stephan/Documents/_bb/steamworks/public/steam/isteamcontroller.h",
+		"/Users/stephan/Documents/_bb/steamworks/public/steam/isteamclient.h",
+		"/Users/stephan/Documents/_bb/steamworks/public/steam/isteamremotestorage.h",
+		"/Users/stephan/Documents/_bb/steamworks/public/steam/steamtypes.h",
+		"/Users/stephan/Documents/_bb/steamworks/public/steam/isteamnetworking.h",
+		"/Users/stephan/Documents/_bb/steamworks/public/steam/isteammusic.h",
+		"/Users/stephan/Documents/_bb/steamworks/public/steam/matchmakingtypes.h",
+		"/Users/stephan/Documents/_bb/steamworks/public/steam/isteamvideo.h",
+		"/Users/stephan/Documents/_bb/steamworks/public/steam/isteamunifiedmessages.h",
+		"/Users/stephan/Documents/_bb/steamworks/public/steam/isteammusicremote.h",
+		"/Users/stephan/Documents/_bb/steamworks/public/steam/isteamhttp.h",
+		"/Users/stephan/Documents/_bb/steamworks/public/steam/isteamgameserverstats.h",
+		"/Users/stephan/Documents/_bb/steamworks/public/steam/isteamgamecoordinator.h",
+		"/Users/stephan/Documents/_bb/steamworks/public/steam/isteamappticket.h",
+		"/Users/stephan/Documents/_bb/steamworks/public/steam/isteamapps.h",
+		"/Users/stephan/Documents/_bb/steamworks/public/steam/isteamapplist.h",
+		"/Users/stephan/Documents/_gh/unecht/samples/helloworld/imgui.ini",
+		"/Users/stephan/Documents/_gh/xtea-d/.travis.yml",
+		"/Users/stephan/Documents/_gh/extrawurst.github.io/_posts/2015-07-30-worthreading.md",
+		"/Users/stephan/Documents/_gh/extrawurst.github.io/_posts/2015-07-21-osx-terminal-colors.md",
+		"/Users/stephan/Documents/_gh/extrawurst.github.io/_posts/2015-07-15-homebrew.md",
+		"/Users/stephan/Documents/_gh/extrawurst.github.io/categories.html",
+		"/Users/stephan/Documents/_gh/extrawurst.github.io/_posts/2015-03-08-helloworld.md",
+		"/Users/stephan/Documents/_gh/extrawurst.github.io/_posts/2015-03-14-githubpages.md",
+		"/Users/stephan/Documents/_gh/extrawurst.github.io/_posts/2015-03-14-worthreading.md"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"disable",
+			"MS",
+			"FMOD_System_CreateSound",
+			"FMOD_System_PlaySound",
+			"torad",
+			"mtxProj(",
+			"VertexDecl",
+			"getStride",
+			"vec3Norm",
+			"tvb",
+			"m_grid",
+			"GLXContext",
+			"m_submit",
+			"setTransform",
+			"setTrans",
+			"matrix",
+			"mtxQuatTranslationHMD",
+			"mtxProj",
+			"mtxQuatTranslationHMD",
+			"s_fileReader",
+			"hashMurmur2A",
+			"shadergl",
+			" invalidHandle",
+			"invalidHandle",
+			"BGFX_INVALID_HANDLE",
+			"bgfx_render_frame",
+			"BGFX_CONFIG_MULTITHREADED",
+			"bgfx_set_platform_dat",
+			"glfw",
+			"processEvents",
+			"k_iSteamUserCallbacks",
+			"ActivateGameOverlay",
+			"SteamServersConnected_t",
+			"ActivateGameOverlay",
+			"SteamItemDef_t",
+			"SteamItemInstanceID_t",
+			"SteamItemDetails_t",
+			"SteamInventoryResult_t",
+			"RTime32",
+			"HHTMLBrowser",
+			"EItemUpdateStatus",
+			"EItemStatistic",
+			"k_cchPublishedDocumentTitleMax",
+			"SteamUGCDetails_t",
+			"EUGCMatchingUGCType",
+			"EUserUGCList",
+			"EUGCQuery",
+			"AccountID_t",
+			"UGCQueryHandle_t",
+			"ESteamControllerPad",
+			"enum EResult",
+			"EResult",
+			"ClientUnifiedMessageHandle",
+			"HTTPCookieContainerHandle",
+			"EHTTPMethod",
+			"HTTPRequestHandle",
+			"ISteamHTMLSurface",
+			"SteamControllerState001_t",
+			"AudioPlayback_Status",
+			"ScreenshotHandle",
+			"ESNetSocketConnectionType",
+			"SNetListenSocket_t",
+			"P2PSessionState_t",
+			"EP2PSend",
+			"DepotId_t",
+			"EWorkshopEnumerationType",
+			"EWorkshopVideoProvider",
+			"PublishedFileUpdateHandle_t",
+			"EWorkshopFileType",
+			"SteamParamStringArray_t",
+			"ERemoteStoragePublishedFileVisibility",
+			"EUGCReadAction",
+			"UGCFileWriteStreamHandle_t",
+			"ERemoteStoragePlatform",
+			"k_iSteamUserStatsCallbacks",
+			"NumberOfCurrentPlayers_t",
+			"GetNumberOfCurrentPlayers",
+			"UGCHandle_t",
+			"ELeaderboardSortMethod",
+			"GetCallback",
+			"k_iSteamMatchmakingCallbacks",
+			"LobbyMatchList_t",
+			"CCallbackBase",
+			"GetAPICallResult",
+			"ISteamMatchmakingPingResponse",
+			"ISteamMatchmakingServerListResponse",
+			"k_cbMaxGameServerName",
+			"EMatchMakingServerResponse",
+			"ELobbyComparison",
+			"_INTERFACE_VERSION",
+			"STEAMUTILS_INTERFACE_VERSION",
+			"GetISteamUtils",
+			"ISteamClient",
+			"SteamUtils",
+			"SteamAPI_Init",
+			"CGameID",
+			"EAccountType",
+			"CF_EXPORT",
+			"CFBundleRef",
+			"=",
+			"width",
+			"gettext",
+			"FontGlobalScale",
+			"font"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"folders":
+	[
+		{
+			"path": "/Users/stephan/Documents/_gh/extrawurst.github.io"
+		}
+	],
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 100.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/Documents/_gh/extrawurst.github.io/blog.sublime-workspace"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 267.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
