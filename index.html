@@ -8,7 +8,7 @@ layout: blank
         <p>{% if page.author %}{{ page.author }} • {% endif %}{% if page.date %}<time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%b %-d, %Y" }}</time>{% endif %}{% if page.categories %} • {{ page.categories | array_to_sentence_string }}{% endif %}</p>
       </header>
       <div>
-{{ page.excerpt }}
+{{ page.excerpt | truncatewords: 40 }}
       </div>
       <footer>
         <p><a href="{{ page.url | prepend: site.baseurl }}">{{ site.more }} &raquo;</a></p>

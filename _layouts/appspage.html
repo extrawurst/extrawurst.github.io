@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+{% for entry in page.entries %}
+
+<div style="min-height: 200px; text-align: justify">
+
+<h1>
+{{ entry.name }}
+<div style="float: right;">
+<a href="https://play.google.com/store/apps/details?id={{entry.gplay}}"><i class="fa fa-android"></i></a>
+<a href="https://itunes.apple.com/de/app/{{entry.ios}}"><i class="fa fa-apple"></i></a>
+</div>
+</h1>
+
+<img style="float: right; padding-left: 10px" src="assets/apps/thumb_{{ entry.thumb }}"/>
+{{ entry.shortdesc }}...
+
+</div>
+{% endfor %}
