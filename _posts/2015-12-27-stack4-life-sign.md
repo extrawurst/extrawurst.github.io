@@ -1,8 +1,10 @@
 ---
 title:  "STACK4 Life Sign"
-date:   2015-12-27 15:00:00
+date:   2015-12-31 15:00:00
 categories: [general, unity, dlang]
 ---
+
+![STACK4 firetv]({{ site.url }}/assets/s4-firetv.png){: .center-image }
 
 During the holidays I finally found the time to work a little bit on my mobile app [STACK4](http://www.stack4.de).
 It has been a while but I still have a few points on my todo list for this project.
@@ -32,4 +34,6 @@ I am a big fan of the FireTV and new Apple-TV and supporting these platforms asw
 
 The biggest issue with them is the input. STACK4 used to be controlled via touch exclusively and now it needed GameController Input aswell. As mentioned before this was hard to do with the old UI. Thanks to the new UI we have key/gamepad support now (an early version). 
 
-Some screens are not yet implemented and some flows do not work yet but I am on a good way and hope to finish this in January 2016. Following you see a video of 
+Some screens are not yet implemented and some flows do not work yet but I am on a good way and hope to finish this in January 2016. Following you see a low-res gif-video of the new UI and how it is controlled using Keys:
+
+![STACK4 new ui]({{ site.url }}/assets/s4-key-controls.gif){: .center-image }
