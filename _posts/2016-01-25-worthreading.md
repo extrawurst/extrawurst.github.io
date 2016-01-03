@@ -24,3 +24,15 @@ The following stuff is what caught my eye in the last couple of weeks. Consider 
 
 [Voxelshop](https://blackflux.com/node/11)
 [MagicaVoxel](https://ephtracy.github.io/)
+
+###
+
+[PixelArtGen](https://github.com/abagames/PixelArtGen)
+
+###OpenSource: Lock-Free Data Structures
+
+[website](http://www.liblfds.org/)
+
+###
+
+[](http://journal.stuffwithstuff.com/2015/09/08/the-hardest-program-ive-ever-written/)
