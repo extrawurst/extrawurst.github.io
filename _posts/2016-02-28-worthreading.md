@@ -21,3 +21,6 @@ void foo(Params); // void foo(int, double, string);
 {% endhighlight %}
 
 [Article](http://dlang.org/ctarguments.html)
+
+[why foreach creates garbage in unity](http://codingadventures.me/2016/02/15/unity-mono-runtime-the-truth-about-disposable-value-types/)
+[monodis IL disassembler for linux and osx](http://www.mono-project.com/docs/tools+libraries/tools/monodis/)
