@@ -28,3 +28,7 @@ void foo(Params); // void foo(int, double, string);
 ###Book: "D Web Development"
 
 https://twitter.com/Extrawurst/status/702234903384031232
+
+###Tools: oh my zsh
+
+[setup zsh on osx](http://devsnaps.herokuapp.com/blog/2013/11/09/setting-up-the-terminal-for-development-in-os-x/)
