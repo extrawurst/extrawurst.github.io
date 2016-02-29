@@ -32,3 +32,11 @@ https://twitter.com/Extrawurst/status/702234903384031232
 ###Tools: oh my zsh
 
 [setup zsh on osx](http://devsnaps.herokuapp.com/blog/2013/11/09/setting-up-the-terminal-for-development-in-os-x/)
+
+###
+
+[](https://pagefault.se/dlang/2016/02/26/declarative-opengl-dlang/)
+
+###Gamasutra: "Practical tips to make the most out of your first GDC" by Eline Muijres
+
+[link to post](http://www.gamasutra.com/blogs/ElineMuijres/20160225/266607/Practical_tips_to_make_the_most_out_of_your_first_GDC.php)
