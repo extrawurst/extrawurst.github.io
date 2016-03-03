@@ -30,10 +30,6 @@ As I already twittered I finally received a copy of the book about D web develop
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Great! My copy of &quot;D Web Development&quot; arrived - look who was a reviewer :P <a href="https://twitter.com/hashtag/dlang?src=hash">#dlang</a> <a href="https://t.co/S828YvJCs1">https://t.co/S828YvJCs1</a> <a href="https://t.co/Wx8cKNa4HT">pic.twitter.com/Wx8cKNa4HT</a></p>&mdash; Stephan Dilly (@Extrawurst) <a href="https://twitter.com/Extrawurst/status/702234903384031232">February 23, 2016</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-###Tools: oh my zsh
-
-[setup zsh on osx](http://devsnaps.herokuapp.com/blog/2013/11/09/setting-up-the-terminal-for-development-in-os-x/)
-
 ###Post: "Declarative OpenGL (sort of) in D" by profan
 
 Great article about automatic wrapping of C based APIs using D's strong meta programming features:
