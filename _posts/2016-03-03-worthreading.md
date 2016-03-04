@@ -6,7 +6,7 @@ categories: [reading, unity, dlang]
 
 The following stuff is what caught my eye in the last couple of weeks. Consider these kind of posts as an entry in my personal knowledge base ;)
 
-###Unity
+### Unity
 
 * "Integrating Visual Studio with Unity3d on Mac using UnityVS Tools" by Yun Zhi Lin ([link](https://www.yunspace.com/post/integrating-visual-studio-with-unity3d-on-mac-using-unityvs-tools/))
 * "why foreach creates garbage in unity" by Giovanni Campo ([link](http://codingadventures.me/2016/02/15/unity-mono-runtime-the-truth-about-disposable-value-types/))
@@ -23,14 +23,14 @@ alias Params = AliasSeq!(int, double, string);
 void foo(Params); // void foo(int, double, string);
 {% endhighlight %}
 
-###Book: "D Web Development"
+### Book: "D Web Development"
 
 As I already twittered I finally received a copy of the book about D web development by Kai Nacke that I reviewed:
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Great! My copy of &quot;D Web Development&quot; arrived - look who was a reviewer :P <a href="https://twitter.com/hashtag/dlang?src=hash">#dlang</a> <a href="https://t.co/S828YvJCs1">https://t.co/S828YvJCs1</a> <a href="https://t.co/Wx8cKNa4HT">pic.twitter.com/Wx8cKNa4HT</a></p>&mdash; Stephan Dilly (@Extrawurst) <a href="https://twitter.com/Extrawurst/status/702234903384031232">February 23, 2016</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-###Post: "Declarative OpenGL (sort of) in D" by profan
+### Post: "Declarative OpenGL (sort of) in D" by profan
 
 Great article about automatic wrapping of C based APIs using D's strong meta programming features:
 
