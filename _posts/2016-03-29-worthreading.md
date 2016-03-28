@@ -9,3 +9,7 @@ The following stuff is what caught my eye in the last couple of weeks. Consider 
 ###Tools: oh my zsh
 
 [setup zsh on osx](http://devsnaps.herokuapp.com/blog/2013/11/09/setting-up-the-terminal-for-development-in-os-x/)
+
+###GDC: "Story of making Diablo"
+
+[gamasutra](http://www.gamasutra.com/view/news/268507/20_years_later_David_Brevik_shares_the_story_of_making_Diablo.php)
