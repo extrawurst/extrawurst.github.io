@@ -1,6 +1,6 @@
 ---
-title:  "Worth Reading (March 2016)"
-date:   2016-03-29 15:00:00
+title:  "Worth Reading (March+April 2016)"
+date:   2016-04-30 21:00:00
 categories: [reading, unity, dlang]
 ---
 
@@ -26,3 +26,15 @@ The following stuff is what caught my eye in the last couple of weeks. Consider 
 ###Dconf 2016
 
 [Dconf 2016 Schedule](http://dconf.org/2016/schedule/)
+
+###Post: "From Browser to Mobile Game Development – An InnoGames Retrospective" by Dennis Rohlfing
+
+[article on gamasutra](http://www.gamasutra.com/blogs/DennisRohlfing/20160427/271347/From_Browser_to_Mobile_Game_Development__An_InnoGames_Retrospective.php)
+
+###Podcast: JS Jabber with Marcus Blankenship on "Growing Happy Developers"
+
+[podcast on js jabber](https://devchat.tv/js-jabber/207-jsj-growing-happy-developers-with-marcus-blankenship)
+
+###Podcsat: SE Radio with Fred George on "Developer Anarchy"
+
+[podcst on se radio](http://www.se-radio.net/2016/03/se-radio-episode-253-fred-george-on-developer-anarchy/)
