@@ -24,3 +24,9 @@ Andrei and his unique and entertaining way of doing presentations at prestigous 
 Here another link that is worth mentioning since Andrei is talking about it in his talk:
 
 ["Why Concepts didn’t make C++17"](http://honermann.net/blog/?p=3)
+
+### Post: "Minimal Dev Setup on OXS" by Oliver Müller
+
+This post was insanely useful to me, since it introduced me to (among a ton of other things) [brew-cask](https://caskroom.github.io/)
+
+[Blog Post](http://blog.coldflake.com/posts/Minimal-Development-Setup-for-Mac-OS/)
