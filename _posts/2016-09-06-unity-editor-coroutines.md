@@ -4,7 +4,7 @@ date:   2016-09-06 02:00:00
 categories: [unity, general]
 ---
 
-Did you ever try to do non-blocking WWW-requests in Unity without being in playmode ? Then you know about the problems here:
+Did you ever try to do non-blocking [WWW](https://docs.unity3d.com/ScriptReference/WWW.html)-requests in Unity without being in playmode ? Then you know about the problems here:
 
 * WWW uses coroutines to be used non-blocking
 * Coroutines do not work outside the playmode
