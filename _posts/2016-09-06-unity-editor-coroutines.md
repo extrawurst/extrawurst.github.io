@@ -1,5 +1,5 @@
 ---
-title:  "coroutines in the unity editor outside the playmode"
+title:  "unity coroutines in the editor mode"
 date:   2016-09-06 02:00:00
 categories: [unity, general]
 ---
