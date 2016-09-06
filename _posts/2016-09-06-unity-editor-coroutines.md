@@ -1,5 +1,5 @@
 ---
-title:  "unity coroutines in the editor mode"
+title:  "unity coroutines at editor time"
 date:   2016-09-06 02:00:00
 categories: [unity, general]
 ---
