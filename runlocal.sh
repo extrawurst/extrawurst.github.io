@@ -1,1 +1,1 @@
-jekyll serve --config _config.local.yml
+jekyll serve --unpublished --config _config.local.yml
