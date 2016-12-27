@@ -53,10 +53,29 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/stephan/Documents/_gh/extrawurst.github.io"
+		"/Users/stephan/Documents/wooga/c1.frontend/ProjectSettings"
 	],
 	"file_history":
 	[
+		"/Users/stephan/Dropbox/_inno/_warlords/questions.txt",
+		"/Users/stephan/Dropbox/_inno/_warlords/notes",
+		"/Users/stephan/Dropbox/private/_proposals/gdc2017-sf/binding-framework-in-unity/speaker-bio.txt",
+		"/Users/stephan/Downloads/mysql.sql",
+		"/Users/stephan/Documents/_gh/extrawurst.github.io/_posts/2016-12-02-pocketgamer.md",
+		"/Users/stephan/Documents/New Unity Project/dlib/dub.json",
+		"/Users/stephan/Documents/New Unity Project/clib/test.cpp",
+		"/Users/stephan/Documents/New Unity Project/dlib/test.d",
+		"/Users/stephan/Documents/wooga/c1.frontend/ProjectSettings/ProjectSettings.asset",
+		"/Users/stephan/Documents/wooga/c1.frontend/ProjectSettings/EditorBuildSettings.asset",
+		"/Users/stephan/Downloads/zrm3_adam_trd.d",
+		"/Users/stephan/Documents/_bb/docs/Lebenslauf/en/skills.tex",
+		"/Users/stephan/Dropbox/private/_proposals/gdc2017-sf/binding-framework-in-unity/Data Binding Architectures.txt",
+		"/Users/stephan/Documents/_bb/docs/Lebenslauf/en/main.tex",
+		"/Users/stephan/Dropbox/_inno/_pr/pocket-gamer/4 keys to a successful tech switch on mobile.md",
+		"/Users/stephan/Downloads/client_secret_939329052901-rnn2jfq0el9tlmf7foqk0h442vl7r440.apps.googleusercontent.com.json",
+		"/Users/stephan/Dropbox/private/_proposals/gdc2017-sf/binding-framework-in-unity/Data Binding Architectures for Rapid UI Creation i",
+		"/Users/stephan/Dropbox/private/_proposals/gdc2017-sf/mobile-gamebackend-in-d.txt",
+		"/Users/stephan/Documents/_gh/extrawurst.github.io/_posts/2016-09-06-unity-editor-coroutines.md",
 		"/Users/stephan/Documents/_gh/extrawurst.github.io/_posts/2015-12-25-worthreading.md",
 		"/Users/stephan/Documents/_gh/DerelictFmod/source/app.d",
 		"/Users/stephan/Documents/_bb/stack4/src/unity/Assets/stack4/scenes/ui/uisingleplayer.unity.meta",
@@ -83,7 +102,6 @@
 		"/Users/stephan/Documents/_gh/DerelictFmod/source/derelict/fmod/dsp.d",
 		"/Users/stephan/Documents/_gh/DerelictFmod/source/derelict/fmod/common.d",
 		"/Users/stephan/Documents/_gh/DerelictFmod/source/derelict/fmod/codec.d",
-		"/Users/stephan/Documents/_bb/docs/Lebenslauf/en/main.tex",
 		"/Users/stephan/Desktop/app.d",
 		"/Users/stephan/Documents/_gh/unecht/samples/steamworkstest/dub.json",
 		"/Users/stephan/Documents/_gh/unecht/dub.json",
@@ -166,29 +184,11 @@
 		"/Users/stephan/Documents/_bb/steamworks/public/steam/steamtypes.h",
 		"/Users/stephan/Documents/_bb/steamworks/public/steam/isteamnetworking.h",
 		"/Users/stephan/Documents/_bb/steamworks/public/steam/isteammusic.h",
-		"/Users/stephan/Documents/_bb/steamworks/public/steam/matchmakingtypes.h",
-		"/Users/stephan/Documents/_bb/steamworks/public/steam/isteamvideo.h",
-		"/Users/stephan/Documents/_bb/steamworks/public/steam/isteamunifiedmessages.h",
-		"/Users/stephan/Documents/_bb/steamworks/public/steam/isteammusicremote.h",
-		"/Users/stephan/Documents/_bb/steamworks/public/steam/isteamhttp.h",
-		"/Users/stephan/Documents/_bb/steamworks/public/steam/isteamgameserverstats.h",
-		"/Users/stephan/Documents/_bb/steamworks/public/steam/isteamgamecoordinator.h",
-		"/Users/stephan/Documents/_bb/steamworks/public/steam/isteamappticket.h",
-		"/Users/stephan/Documents/_bb/steamworks/public/steam/isteamapps.h",
-		"/Users/stephan/Documents/_bb/steamworks/public/steam/isteamapplist.h",
-		"/Users/stephan/Documents/_gh/unecht/samples/helloworld/imgui.ini",
-		"/Users/stephan/Documents/_gh/xtea-d/.travis.yml",
-		"/Users/stephan/Documents/_gh/extrawurst.github.io/_posts/2015-07-30-worthreading.md",
-		"/Users/stephan/Documents/_gh/extrawurst.github.io/_posts/2015-07-21-osx-terminal-colors.md",
-		"/Users/stephan/Documents/_gh/extrawurst.github.io/_posts/2015-07-15-homebrew.md",
-		"/Users/stephan/Documents/_gh/extrawurst.github.io/categories.html",
-		"/Users/stephan/Documents/_gh/extrawurst.github.io/_posts/2015-03-08-helloworld.md",
-		"/Users/stephan/Documents/_gh/extrawurst.github.io/_posts/2015-03-14-githubpages.md",
-		"/Users/stephan/Documents/_gh/extrawurst.github.io/_posts/2015-03-14-worthreading.md"
+		"/Users/stephan/Documents/_bb/steamworks/public/steam/matchmakingtypes.h"
 	],
 	"find":
 	{
-		"height": 23.0
+		"height": 35.0
 	},
 	"find_in_files":
 	{
@@ -203,6 +203,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"stack4",
 			"disable",
 			"MS",
 			"FMOD_System_CreateSound",
@@ -324,7 +325,7 @@
 	"folders":
 	[
 		{
-			"path": "/Users/stephan/Documents/_gh/extrawurst.github.io"
+			"path": "/Users/stephan/Documents/wooga/c1.frontend"
 		}
 	],
 	"groups":
@@ -420,7 +421,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 267.0,
+	"side_bar_width": 295.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
