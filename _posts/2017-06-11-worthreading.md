@@ -4,7 +4,7 @@ date:   2017-06-11 16:00:00
 categories: [reading, dlang]
 ---
 
-Oh wow its more than a year since my last 'worthreading' :(
+Oh wow its more than a year since my last '[worthreading](http://blog.extrawurst.org/reading/dlang/2016/04/30/worthreading.html)' :(
 It was a crazy ride! Crazy hours at work, speaking at 4 conferences and 2 vacations later I am here now.
 I tried to recollect the some discoveries since then:
 
