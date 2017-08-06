@@ -4,9 +4,7 @@ date:   2017-08-11 16:00:00
 categories: [reading, dlang]
 ---
 
-Oh wow its more than a year since my last '[worthreading](http://blog.extrawurst.org/reading/dlang/2016/04/30/worthreading.html)' :(
-It was a crazy ride! Crazy hours at work, speaking at 4 conferences and 2 vacations later I am here now.
-I tried to recollect the some discoveries since then:
+The following stuff is what caught my eye in the last couple of weeks. Consider these kind of posts as an entry in my personal knowledge base ;)
 
 ### Video: "New Tech Start-Up Bubble"
 
