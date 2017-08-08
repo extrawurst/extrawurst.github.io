@@ -18,4 +18,4 @@ In this installment I focus less on reading but on watching. These are particula
 
 ### Video Lunch
 
-Most of these Videos were watched during Lunch time with my team. We do this every two weeks and order food and stay for lunch in the office and watch those sort of videos. But I will devote a whole article on that later. Stay tuned..
+Most of these Videos my team and I watched during lunch time. We do this every two weeks: Order in and watch a video in our office together. But I will devote a whole article on that later. Stay tuned..
