@@ -1,7 +1,7 @@
 ---
 title:  "Video Lunch"
 date:   2017-08-10 21:00:00
-categories: [reading, general, leadership]
+categories: [general, leadership]
 ---
 
 [img]: {{ site.url }}/assets/night-television-tv-theme-machines.jpg "img"
