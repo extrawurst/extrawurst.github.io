@@ -1,0 +1,22 @@
+---
+layout: default
+order: 1
+---
+
+{% for entry in page.entries %}
+
+<div style="min-height:200px">
+    {% if entry.youtube %}
+    <iframe style="float:left; margin-right:10px;" width="260" height="200" src="{{entry.youtube}}" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+    {% endif %}
+    {% if entry.thumb %}
+    <a href="{{entry.link}}"><img style="float:left; margin-right:10px;" width="260" height="200" src="assets/talks/{{ entry.thumb }}"></a>
+    {% endif %}
+
+    <a href="{{entry.link}}"><h1 style="margin-bottom: 3px;">{{ entry.name }}</h1></a>
+    <h6 style="margin-top: 0px;">{{entry.date}}</h6>
+
+    {{ entry.shortdesc }}
+</div>
+
+{% endfor %}
