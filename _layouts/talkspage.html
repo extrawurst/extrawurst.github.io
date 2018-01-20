@@ -14,9 +14,9 @@ order: 1
     {% endif %}
 
     <a href="{{entry.link}}"><h1 style="margin-bottom: 3px;">{{ entry.name }}</h1></a>
-    <h6 style="margin-top: 0px;">{{entry.date}}</h6>
+    <h6 style="margin-top: 0px; margin-bottom: 8px;">{{entry.date}}</h6>
 
-    {{ entry.shortdesc }}
+    <div style="font-size: 150%; font-weight: 500;">{{ entry.shortdesc }}</div>
 </div>
 
 {% endfor %}
