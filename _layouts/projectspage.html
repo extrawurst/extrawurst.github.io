@@ -10,12 +10,22 @@ order: 2
 <h1>
 {{ entry.name }}
 <div style="float: right;">
+{% if entry.gplay %}
 <a href="https://play.google.com/store/apps/details?id={{entry.gplay}}"><i class="fa fa-android"></i></a>
+{% endif %}
+{% if entry.ios %}
 <a href="https://itunes.apple.com/de/app/{{entry.ios}}"><i class="fa fa-apple"></i></a>
+{% endif %}
 </div>
 </h1>
 
-<img style="float: right; padding-left: 10px" src="assets/apps/thumb_{{ entry.thumb }}"/>
+{% if entry.link %}
+<a href="{{entry.link}}">
+{% endif %}
+<img style="float: right; padding-left: 10px" src="assets/projects/thumb_{{ entry.thumb }}"/>
+{% if entry.link %}
+</a>
+{% endif %}
 {{ entry.shortdesc }}...
 
 </div>
