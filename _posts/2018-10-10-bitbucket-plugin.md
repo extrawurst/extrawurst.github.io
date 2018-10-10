@@ -19,7 +19,7 @@ categories: [general]
     * uses folder to persist
 * `atlas-package`
 * `atlas-install-plugin`
-* follow log file
+* `less amps-standalone-bitbucket-LATEST/target/bitbucket/home/log/atlassian-bitbucket.log`
 
 ## Next Steps
 
