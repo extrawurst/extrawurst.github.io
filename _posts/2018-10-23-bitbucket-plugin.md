@@ -96,6 +96,14 @@ Find the entire changeset [here on github](https://github.com/pragbits/stash2sla
 
 This was obviously just a quick overview but working with atlassian plugins seems fun and I found a couple of possible improvements I would like to tackle.
 
+### Debug local instance
+
+For my testing so far I did not need to connect via debugger right into my plugin but I can see how knowing how is beneficial.
+
+So here is an explanation on how to run your local instance to be able to debug it (on port 8000): [Run in debug mode](https://scriptrunner.adaptavist.com/4.3.5/bitbucket/DevEnvironment.html#_b_new_app_with_a_href_https_developer_atlassian_com_docs_developer_tools_working_with_the_sdk_command_reference_atlas_run_standalone_atlas_run_standalone_a)
+
+And here you find how to configure your IntelliJ to be able to connect to it: [Setup IntelliJ](https://scriptrunner.adaptavist.com/4.3.5/bitbucket/DevEnvironment.html#_3_create_debug_configuration_in_idea)
+
 ### Thread support to improve readability
 
 For now the plugin dumps all updates into a single slack channel sequentially. As said we handle a lot of repositories and one thing I would like to integrate is thread support for those messages to have a cleaner overview (one thread per PR).
