@@ -8,9 +8,10 @@ categories: [general]
 
 At work we are using bitbucket server for our sourcecode and slack for our communication.
 My team at InnoGames is responsible for a long list of repositories and is heavily utilizing pull-requests to do code-review.
-PRs were lying around a lot unless authors pro-actively asked for reviews.
 
-We wanted to automate this better and found a bitbucket plugin that forwards pullrequest reviews to slack: Stash2Slack ([see in Marketplace](https://marketplace.atlassian.com/apps/1213042/slack-notifications-plugin)).
+![marketplace]({{ site.url }}/assets/stash2slack-marketplace.png){: .center-image }
+
+PRs were lying around a lot unless authors pro-actively asked for reviews. So we wanted to automate this better and found a bitbucket plugin that forwards pullrequest reviews to slack: Stash2Slack ([see in Marketplace](https://marketplace.atlassian.com/apps/1213042/slack-notifications-plugin)).
 
 Unfortunately Stash2Slack turned out not to have a rest api to have its settings configured which is a requirement for is since we have automation of settings configuration on our multitude of repositories (we checked the [sourcecode on github](https://github.com/pragbits/stash2slack)).
 
