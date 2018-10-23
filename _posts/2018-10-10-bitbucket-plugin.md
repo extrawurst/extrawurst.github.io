@@ -1,6 +1,6 @@
 ---
 title:  "Developing Atlassian Bitbucket plugins"
-date:   2018-10-23 12:00:00
+date:   2018-10-23 9:00:00
 categories: [general]
 ---
 
