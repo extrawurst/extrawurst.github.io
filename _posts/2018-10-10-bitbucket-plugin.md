@@ -23,7 +23,13 @@ The following is a short recap of the (sometimes) not so obvious steps to take t
 
 ## The Setup (on mac)
 
-### Install Prerequesists (see [Atlassian Docs](https://developer.atlassian.com/server/framework/atlassian-sdk/set-up-the-atlassian-plugin-sdk-and-build-a-project/))
+Three simple steps to get up and runing:
+
+* Install prerequesits
+* Run local BB server
+* Build/Deploy/Test your plugin
+
+### Install Prerequesits (see [Atlassian Docs](https://developer.atlassian.com/server/framework/atlassian-sdk/set-up-the-atlassian-plugin-sdk-and-build-a-project/))
     
 * JDK 
     * check `javac -version` (tested with 1.8.0_121)
