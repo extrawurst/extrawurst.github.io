@@ -42,22 +42,22 @@ Three simple steps to get up and running:
 
 * Start server process
     * run `atlas-run-standalone --product bitbucket`
-    * *this runs a bitbucket server instance in FG (so you can overlook the output on the stdout)*
+    * *this runs a bitbucket server instance in foreground (so you can overlook the stdout)*
 * Server state / clean server
     * `cd amps-standalone-bitbucket-LATEST/`
     * *this folder is used to persist the entire servers state, if you want a clean install, just delete this one*
+* Debug logs
+    * run `less amps-standalone-bitbucket-LATEST/target/bitbucket/home/log/atlassian-bitbucket.log`
+    * *now you can search/follow the log for anything you print with log4j*
 
 ### Run your plugin
 
 * Build your plugin
     * run `atlas-package` where your plugins `pom.xml` is located
     * *this will run maven build scripts to create the plugins .jar*
-* Install plugin in runnin server   
+* Install plugin in running server   
     * run `atlas-install-plugin` next to the `pom.xml` again
     * *this will install the plugin into the running bitbucket server instance*
-* Debug logs
-    * run `less amps-standalone-bitbucket-LATEST/target/bitbucket/home/log/atlassian-bitbucket.log`
-    * *now you can search/follow the log for anything you print with log4j*
 
 ## The actual change
 
@@ -108,7 +108,7 @@ Although I see a lot of opportunities to cleanup the current code that creates t
 
 Another problem I came across is the flawed way settings are saved. This manifests in this plugin being very error prone when used in a bitbucket server setup with multiple nodes. 
 
-It uses `PluginSettings` to store settings which are not synchronized between nodes and it should use `ActivityObjects` which is even stated in this forum thread: [here](https://community.atlassian.com/t5/Answers-Developer-Questions/JiraPluginSettings-with-Data-Center/qaq-p/529283) - too bad the docs for atlassian plugin development are rather lacking.
+It uses `PluginSettings` to store settings which are not synchronized between nodes and it should use `ActiveObjects` which is even stated in this forum thread: [here](https://community.atlassian.com/t5/Answers-Developer-Questions/JiraPluginSettings-with-Data-Center/qaq-p/529283) - too bad the docs for atlassian plugin development are rather lacking.
 
 ### Repo is dormant
 
