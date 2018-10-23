@@ -23,7 +23,7 @@ The following is a short recap of the (sometimes) not so obvious steps to take t
 
 ## The Setup (on mac)
 
-Three simple steps to get up and runing:
+Three simple steps to get up and running:
 
 * Install prerequesits
 * Run local BB server
