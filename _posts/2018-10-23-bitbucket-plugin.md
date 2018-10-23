@@ -4,12 +4,14 @@ date:   2018-10-23 9:00:00
 categories: [general]
 ---
 
-## The Why
-
 At work we are using bitbucket server for our sourcecode and slack for our communication.
-My team at InnoGames is responsible for a long list of repositories and is heavily utilizing pull-requests to do code-review.
+The folllowing gives you an insight into how to make a bitbucket plugin that talks to Slack.
 
 ![marketplace]({{ site.url }}/assets/stash2slack-marketplace.png){: .center-image }
+
+## The Why
+
+My team at InnoGames is responsible for a long list of repositories and is heavily utilizing pull-requests to do code-review.
 
 PRs were lying around a lot unless authors pro-actively asked for reviews. So we wanted to automate this better and found a bitbucket plugin that forwards pullrequest reviews to slack: Stash2Slack ([see in Marketplace](https://marketplace.atlassian.com/apps/1213042/slack-notifications-plugin)).
 
