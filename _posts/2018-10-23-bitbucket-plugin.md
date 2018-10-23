@@ -58,6 +58,39 @@ Three simple steps to get up and running:
     * run `less amps-standalone-bitbucket-LATEST/target/bitbucket/home/log/atlassian-bitbucket.log`
     * *now you can search/follow the log for anything you print with log4j*
 
+## The actual change
+
+Now the actual change was pretty simple:
+* add a rest description to the plugin manifest
+* add a standard spring style REST endpoint
+
+See the manifest changes here:
+
+```xml
+<rest key="slack-rest" path="/stash2slack" version="1.0">
+    <description>Stash2Slack Rest API</description>
+</rest>
+```
+
+See an example REST endpoint here:
+```java
+@Path("/settings")
+public class RestResource {
+
+    ...
+    
+    @GET
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response getGlobalSettings() {
+        validate(() -> validationService.validateForGlobal(Permission.ADMIN));
+
+        return Response.ok(getDTOFromGlobalSettings(globalSettingsService)).build();
+    }
+}
+```
+
+Find the entire changeset [here on github](https://github.com/pragbits/stash2slack/pull/71/files).
+
 ## Outlook
 
 This was obviously just a quick overview but working with atlassian plugins seems fun and I found a couple of possible improvements I would like to tackle.
