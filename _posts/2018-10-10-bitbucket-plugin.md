@@ -6,7 +6,15 @@ categories: [general]
 
 ## The Why
 
-I wanted to use a slack-notifications plugin form the marketplace for our bitbucket server. Since we deal with a lot of repositories at work I needed it to expose its per-repository-settings via rest api. This allows us to programatically set settings for batches of repositories. Unfortunately this feature was not supported. So I forked the plugin and wanted to add this myself. 
+At work we are using bitbucket server for our sourcecode and slack for our communication.
+My team at InnoGames is responsible for a long list of repositories and is heavily utilizing pull-requests to do code-review.
+PRs were lying around a lot unless authors pro-actively asked for reviews.
+
+We wanted to automate this better and found a bitbucket plugin that forwards pullrequest reviews to slack: Stash2Slack ([see in Marketplace](https://marketplace.atlassian.com/apps/1213042/slack-notifications-plugin)).
+
+Unfortunately Stash2Slack turned out not to have a rest api to have its settings configured which is a requirement for is since we have automation of settings configuration on our multitude of repositories (we checked the [sourcecode on github](https://github.com/pragbits/stash2slack)).
+
+I decided to add this feature to the plugin and this post is a summary on steps necessary to develop a bitbucket plugin that I wish I had when I started.
 
 The following is a short recap of the (sometimes) not so obvious steps to take to work on an Atlassian Bitbucket plugin.
 
@@ -31,6 +39,9 @@ The following is a short recap of the (sometimes) not so obvious steps to take t
 * Server state / clean server
     * `cd amps-standalone-bitbucket-LATEST/`
     * *this folder is used to persist the entire servers state, if you want a clean install, just delete this one*
+
+### Run your plugin
+
 * Build your plugin
     * run `atlas-package` where your plugins `pom.xml` is located
     * *this will run maven build scripts to create the plugins .jar*
