@@ -4,7 +4,7 @@ date:   2018-10-23 9:00:00
 categories: [general]
 ---
 
-At work we are using bitbucket server for our sourcecode and slack for our communication.
+At work we are using bitbucket server for our source code and slack for our communication.
 The following gives you an insight into how to make a bitbucket plugin that talks to Slack.
 
 ![marketplace]({{ site.url }}/assets/stash2slack-marketplace.png){: .center-image }
@@ -13,9 +13,9 @@ The following gives you an insight into how to make a bitbucket plugin that talk
 
 My team at InnoGames is responsible for a long list of repositories and is heavily utilizing pull-requests to do code-review.
 
-PRs were lying around a lot unless authors pro-actively asked for reviews. So we wanted to automate this better and found a bitbucket plugin that forwards pullrequest reviews to slack: Stash2Slack ([see in Marketplace](https://marketplace.atlassian.com/apps/1213042/slack-notifications-plugin)).
+PRs were lying around a lot unless authors pro-actively asked for reviews. So we wanted to automate this better and found a bitbucket plugin that forwards pull-request reviews to slack: Stash2Slack ([see in Marketplace](https://marketplace.atlassian.com/apps/1213042/slack-notifications-plugin)).
 
-Unfortunately Stash2Slack turned out not to have a rest api to have its settings configured which is a requirement for us since we have automation of settings configuration on our multitude of repositories (we checked the [sourcecode on github](https://github.com/pragbits/stash2slack)).
+Unfortunately Stash2Slack turned out not to have a rest api to have its settings configured which is a requirement for us since we have automation of settings configuration on our multitude of repositories (we checked the [source code on github](https://github.com/pragbits/stash2slack)).
 
 I decided to add this feature to the plugin and this post is a summary on steps necessary to develop a bitbucket plugin that I wish I had when I started.
 
@@ -122,4 +122,4 @@ It uses `PluginSettings` to store settings which are not synchronized between no
 
 ### Repo is dormant
 
-My addition to the plugin in shape of a [PR](https://github.com/pragbits/stash2slack/pull/71) is completely ingnored now, no wonder since the repo was not updated in a year. The author clearly moved on. I would like to dig into how to distribute an Atlassian plugin to maybe supply this updated version to a broader audience. If only I had time...
+My addition to the plugin in shape of a [PR](https://github.com/pragbits/stash2slack/pull/71) is completely ignored now, no wonder since the repo was not updated in a year. The author clearly moved on. I would like to dig into how to distribute an Atlassian plugin to maybe supply this updated version to a broader audience. If only I had time...
