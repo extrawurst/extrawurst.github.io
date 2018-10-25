@@ -5,7 +5,7 @@ categories: [general]
 ---
 
 At work we are using bitbucket server for our sourcecode and slack for our communication.
-The folllowing gives you an insight into how to make a bitbucket plugin that talks to Slack.
+The following gives you an insight into how to make a bitbucket plugin that talks to Slack.
 
 ![marketplace]({{ site.url }}/assets/stash2slack-marketplace.png){: .center-image }
 
@@ -15,7 +15,7 @@ My team at InnoGames is responsible for a long list of repositories and is heavi
 
 PRs were lying around a lot unless authors pro-actively asked for reviews. So we wanted to automate this better and found a bitbucket plugin that forwards pullrequest reviews to slack: Stash2Slack ([see in Marketplace](https://marketplace.atlassian.com/apps/1213042/slack-notifications-plugin)).
 
-Unfortunately Stash2Slack turned out not to have a rest api to have its settings configured which is a requirement for is since we have automation of settings configuration on our multitude of repositories (we checked the [sourcecode on github](https://github.com/pragbits/stash2slack)).
+Unfortunately Stash2Slack turned out not to have a rest api to have its settings configured which is a requirement for us since we have automation of settings configuration on our multitude of repositories (we checked the [sourcecode on github](https://github.com/pragbits/stash2slack)).
 
 I decided to add this feature to the plugin and this post is a summary on steps necessary to develop a bitbucket plugin that I wish I had when I started.
 
@@ -28,11 +28,11 @@ The following is a short recap of the (sometimes) not so obvious steps to take t
 
 Three simple steps to get up and running:
 
-* Install prerequesits
+* Install prerequisites
 * Run local BB server
 * Build/Deploy/Test your plugin
 
-### Install Prerequesits (see [Atlassian Docs](https://developer.atlassian.com/server/framework/atlassian-sdk/set-up-the-atlassian-plugin-sdk-and-build-a-project/))
+### Install Prerequisites (see [Atlassian Docs](https://developer.atlassian.com/server/framework/atlassian-sdk/set-up-the-atlassian-plugin-sdk-and-build-a-project/))
     
 * JDK 
     * check `javac -version` (tested with 1.8.0_121)
