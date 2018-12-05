@@ -32,7 +32,7 @@ Turns out using go in a CI Job was not as easy as I thought. Let's see what diff
 	* ⛔️ still dep does not ship with go
 	* ⛔️ same old copy-code-to-gopath hack like the rest of the bunch
 
-![meme]({{ site.url }}/assets/go-gitlab-meme.jpg)
+![meme]({{ site.url }}/assets/go-gitlab-meme.jpg){: .center-image }
 
 ## A single workspace
 
