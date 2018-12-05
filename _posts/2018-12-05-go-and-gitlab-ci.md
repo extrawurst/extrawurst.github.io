@@ -45,7 +45,7 @@ Modules allow you to have your projects independently structured much like most 
 
 ## The setup with modules
 
-Lets look at our source, go files' import-statements act as depdencies right away, some of them renamed to protect name collisions but go deeply connects to git using git repos as the definition of a dependency:
+Lets look at our source code: go files' import-statements act as depdencies right away, some of them can be renamed to protect name collisions. go deeply connects to git using git repos as the definition of a dependency:
 ```
 package main
 
@@ -60,7 +60,7 @@ import (
 ...
 ```
 
-Now in your project to initialise the usage of modules you simply run:
+To initialise go modules in your project ('alexa-prost' being my project name here) simply run:
 ```
 go mod init alexa-prost
 ```
@@ -76,7 +76,7 @@ require (
 )
 ```
 
-This file contains the versions of the dependencies that got downloaded so that a reliable deterministic build can be reproduced everywhere.
+This file contains the versions of the dependencies that were downloaded. These versions enable a reliable deterministic build that can be reproduced everywhere.
 
 Now this allows us to leave our repository wherever we want and makes our gitlab-ci script super simple:
 ```
@@ -89,12 +89,12 @@ test:
 ## The caveats
 
 1. 👎 **mod is not final** - We are using a very early feature of go here and it might change and contain bugs.
-2. 👎 **gitlab ci caching not supported** - if you want to use gitlab-ci's caching you still need to use the same ol' copy-around trick
+2. 👎 **gitlab ci caching not supported** - if you want to use gitlab-ci's caching, you still need to use the same ol' copy-around trick.
 
 ### Regarding gitlab CI caching
 
-Even with go 1.11's modules the dependencies will live in the `$GOPATH` - so no `node_modules` like folder in your project's path.
-This can still be solved a little more elegant than copying your project code around. Since you just want to cache the dependencies we copy the dependencies around and that is way less verbose:
+Even with go 1.11's modules the dependencies will live in the `$GOPATH` - so no `node_modules`-like folder in your project's path.
+This can still be solved a little more elegantly than copying your project code around. Since you just want to cache the dependencies, we copy those around which is less verbose:
 ```
 test:
   image: golang:1.11
@@ -107,4 +107,4 @@ test:
     - make test
 ```
 
-**Note:** my OCD felt better once i had caching of dependencies working - but the build was still not faster. That maybe due to it currently being too small to be limited in the dependency download/build process.
+**Note:** My OCD felt better once I had caching of dependencies working - but the build still was not faster. That might be due to it currently being too small to be limited by the dependency download/build process.
