@@ -9,7 +9,7 @@ This is a quick writeup of how to set up a simple ci pipeline for a `go` project
 ![golang]({{ site.url }}/assets/golang.png)
 
 
-## The Why
+## The why
 
 I was working on an [Alexa Skill](https://www.amazon.com/dp/B07L4W8D7C) written in go and in fact did my first steps in go. I am still a noob when it comes to the go-world, so I googled on how to set up continuous integration for a go project...
 
@@ -37,15 +37,15 @@ Turns out using go in a CI Job was not as easy as I thought. Let's see what diff
 ## A single workspace
 
 As you can see it does not turn out to be an easy topic.
-Most hassle in this area comes from go having this concept of a workspace. Workspaces were a design decision that go took on day 1. They enforce a certain mindset on you where in a central folder all go projects on your hard drive have to live (including the downloaded dependencies). This is for some (or most) a very unnatural way of structuring their projects. It also comes with lots of strings attached: Like CI jobs copying their code on the fly into the $HOME/go folder to build and resolve 🤢.
+Most hassle in this area comes from go having this concept of a workspace. Workspaces were a design decision that go took on day 1. They enforce a certain mindset on you: All go projects have to live in a central folder on your hard drive (including the downloaded dependencies). This is for some (or most) a very unnatural way of structuring their projects. It also comes with lots of strings attached: Like CI jobs copying their code on the fly into the $HOME/go folder to build and resolve 🤢.
 
-Since I am not an early adopter (lucky me 🥳) go by now released version 1.11 with a first version of module support: [golang modules](https://github.com/golang/go/wiki/Modules)
+I am not an early adopter (lucky me 🥳) and go was working on this already. This years release 1.11 comes with a first version of module support: [golang modules](https://github.com/golang/go/wiki/Modules)
 
-Modules allow you to have your projects independently structured much like most of the third party package managers like glide/godep did. Since this concept is so new most of the sources online do not mention it yet as being an easy alternative to build go projects, hence my post here.
+Modules allow you to have your projects independently structured much like most of the third party package managers eg. glide/dep. Since this concept is so new, most of the online sources do not mention it as being an easy alternative to build go projects yet, hence my post here.
 
-## The Setup with modules
+## The setup with modules
 
-lets look at our source, go files' import-statements act as depdencies right away, some of them renamed to protect name collisions but go deeply connects to git using git repos as the definition of a dependency:
+Lets look at our source, go files' import-statements act as depdencies right away, some of them renamed to protect name collisions but go deeply connects to git using git repos as the definition of a dependency:
 ```
 package main
 
@@ -91,7 +91,7 @@ test:
 1. 👎 **mod is not final** - We are using a very early feature of go here and it might change and contain bugs.
 2. 👎 **gitlab ci caching not supported** - if you want to use gitlab-ci's caching you still need to use the same ol' copy-around trick
 
-### Regarding gitlab ci caching
+### Regarding gitlab CI caching
 
 Even with go 1.11's modules the dependencies will live in the `$GOPATH` - so no `node_modules` like folder in your project's path.
 This can still be solved a little more elegant than copying your project code around. Since you just want to cache the dependencies we copy the dependencies around and that is way less verbose:
