@@ -4,14 +4,14 @@ date:   2018-12-05 18:00:00
 categories: [general]
 ---
 
-This is a quick writeup of how to setup a simple ci pipeline for a `go` project on gitlab using golang's 1.11 modules.
+This is a quick writeup of how to set up a simple ci pipeline for a `go` project on gitlab using golang's 1.11 modules.
 
 ![golang]({{ site.url }}/assets/golang.png)
 
 
 ## The Why
 
-I was working on an [Alexa Skill](https://www.amazon.com/dp/B07L4W8D7C) written in go and in fact did my first steps in go. I am still a noob when in comes to the go-world, so I googled on how to setup continous integration for a go project...
+I was working on an [Alexa Skill](https://www.amazon.com/dp/B07L4W8D7C) written in go and in fact did my first steps in go. I am still a noob when it comes to the go-world, so I googled on how to set up continuous integration for a go project...
 
 Turns out using go in a CI Job was not as easy as I thought. Let's see what different approaches the top hits on the google search for 'golang gitlab ci' propose:
 
@@ -28,7 +28,7 @@ Turns out using go in a CI Job was not as easy as I thought. Let's see what diff
 	* ⛔️ same old copy-code-to-gopath hack like the rest of the bunch
 
 3. [blog.netways.de/2018/06/07/continuous-integration-with-golang-and-gitlab](https://blog.netways.de/2018/06/07/continuous-integration-with-golang-and-gitlab/)
-	* ✅ [dep](https://github.com/golang/dep) feels more official being part of go
+	* ✅ the tool [dep](https://github.com/golang/dep) feels more official being part of go
 	* ⛔️ still dep does not ship with go
 	* ⛔️ same old copy-code-to-gopath hack like the rest of the bunch
 
@@ -37,7 +37,7 @@ Turns out using go in a CI Job was not as easy as I thought. Let's see what diff
 ## A single workspace
 
 As you can see it does not turn out to be an easy topic.
-Most hastle in this area comes from go having this concept of a workspace. Workspaces were a design decision that go took on day 1. They enforce a certain mindset on you where in a central folder all go projects on your hard drive have to live (including the downloaded dependencies). This is for some (or most) a very unnatural way of structuring their projects. It also comes with lots of strings attached: Like ci jobs copying their code on the fly into the $HOME/go folder to build and resolve 🤢.
+Most hassle in this area comes from go having this concept of a workspace. Workspaces were a design decision that go took on day 1. They enforce a certain mindset on you where in a central folder all go projects on your hard drive have to live (including the downloaded dependencies). This is for some (or most) a very unnatural way of structuring their projects. It also comes with lots of strings attached: Like CI jobs copying their code on the fly into the $HOME/go folder to build and resolve 🤢.
 
 Since I am not an early adopter (lucky me 🥳) go by now released version 1.11 with a first version of module support: [golang modules](https://github.com/golang/go/wiki/Modules)
 
@@ -60,7 +60,7 @@ import (
 ...
 ```
 
-Now in your prject to initialise the usage of modules you simply run:
+Now in your project to initialise the usage of modules you simply run:
 ```
 go mod init alexa-prost
 ```
@@ -107,4 +107,4 @@ test:
     - make test
 ```
 
-**Note:** my OCD felt better once i had caching of dependencies working - but the build was still not faster. That meybe due to it currently being too small to be limited in the dependency download/build process.
+**Note:** my OCD felt better once i had caching of dependencies working - but the build was still not faster. That maybe due to it currently being too small to be limited in the dependency download/build process.
