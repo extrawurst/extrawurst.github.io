@@ -6,11 +6,12 @@ categories: [general]
 
 This is a quick writeup of how to setup a simple ci pipeline for a `go` project on gitlab using golang's 1.11 modules.
 
+![golang]({{ site.url }}/assets/golang.png)
+
+
 ## The Why
 
 I was working on an [Alexa Skill](https://www.amazon.com/dp/B07L4W8D7C) written in go and in fact did my first steps in go. I am still a noob when in comes to the go-world, so I googled on how to setup continous integration for a go project...
-
-![meme]({{ site.url }}/assets/go-gitlab-meme.jpg)
 
 Turns out using go in a CI Job was not as easy as I thought. Let's see what different approaches the top hits on the google search for 'golang gitlab ci' propose:
 
@@ -30,6 +31,8 @@ Turns out using go in a CI Job was not as easy as I thought. Let's see what diff
 	* ✅ [dep](https://github.com/golang/dep) feels more official being part of go
 	* ⛔️ still dep does not ship with go
 	* ⛔️ same old copy-code-to-gopath hack like the rest of the bunch
+
+![meme]({{ site.url }}/assets/go-gitlab-meme.jpg)
 
 ## A single workspace
 
