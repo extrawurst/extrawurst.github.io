@@ -14,6 +14,8 @@ I always looked for a chance to dig into the `go` programming language. Recently
 
 Why did I feel the urge to look into go? Because I like to keep up to date with the latest programming lanuages and developments.
 
+One other reason why go this time was: **AWS lambda support** - out of a bunch of scripting/VM based languages go was the only system programming language that is natively supported. Alexa Skills are best developed on lambda and since I was fed up using JS it was go this time.
+
 go is a tool in a toolbox, this particular one is trying to be a system programming language (no VM) and be more modern than crusty old C/C++. 
 Like any other tool it is solving a particular purpose. go's primary purpose is to be *modern* (having a GC and all) while still cater the needs of system developers (*runtime speed* and statically typed'ness) and still be attractive to script programmers (fast iteration - aka. *quick compilation*). On top of that go wants to simplify *concurrency* (dont date to call it [parallelism](https://www.youtube.com/watch?v=cN_DpYBzKso)) with build in support for coroutines (ahem I mean goroutines) and message passing using channels.
 
@@ -36,7 +38,7 @@ Like any other tool it is solving a particular purpose. go's primary purpose is 
 
 I want to emphasize that I am not go expert my anymeans so take this with a grain of salt.
 
-\* those are worked on and with version 1.11 and the modules concept much of this might disappear: see also my other post
+\* those are worked on and with version 1.11 and the modules concept much of this might disappear: [see my post on this](https://blog.extrawurst.org/general/2018/12/05/go-and-gitlab-ci.html)
 
 ### Generics 
 
@@ -58,6 +60,21 @@ if err != nil {
 ```
 
 I ended up checking for `err != nil` everywhere and feel like it is tempting to plaster my code with `panic()` everywhere as an easy out. I am not sure this concept proves good if the dirty/easy way out is so damn tempting.
+
+## Alexa skills in go
+
+Unfortunately AWS does not offer a off-the-shelve SDK for alexa skills in go like it does for javascript but thanks to open source this does not matter much: [alexa-skills-kit-golang](https://github.com/ericdaugherty/alexa-skills-kit-golang)
+
+Thanks to that writing a skill in go is similarly easy as it is in JS: 
+```
+func (h *HelloWorld) OnLaunch(ctx context.Context, request *alexa.Request, session *alexa.Session, ctxPtr *alexa.Context, response *alexa.Response) error {
+	speechText := "Welcome to the Alexa Skills Kit, you can say hello"
+
+	response.SetOutputText(speechText)
+
+	return nil
+}
+```
 
 ## Conclusion
 
