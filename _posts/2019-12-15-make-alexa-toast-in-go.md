@@ -28,7 +28,7 @@ Like any other tool, it is solving a particular purpose. go's primary purpose is
 * 👍 imports == dependencies
 * 👍 tight git integration
 * 👍 multiple return values
-* 👍 somewhat familliar syntax
+* 👍 somewhat familiar syntax
 * 👎 no versioned dependencies *
 * 💔 no deterministic builds *
 * 💔 workspace concept feels weird *
@@ -62,7 +62,7 @@ I ended up checking for `err != nil` everywhere and felt like it is tempting to 
 
 ## Alexa skills in go
 
-My usecase for go was writing an Alexa Skill, remember?
+My use case for go was writing an Alexa Skill, remember?
 
 Unfortunately AWS does not offer an off-the-shelf SDK for alexa skills in go like it does for javascript but thanks to open source this does not matter much: [alexa-skills-kit-golang](https://github.com/ericdaugherty/alexa-skills-kit-golang)
 
@@ -85,8 +85,8 @@ Why do I need DynamoDB access? Because I need to persist the last jokes my skill
 
 Thanks to this all-in-one easy setup, I was productive very quickly and thanks to the 'golang' nickname, it was easy to find on the internet (good luck searching for `go`) - after all, go is not that new.
 
-I am not sure how much further I want to dig into go. Although I want to look more into the concurrency model before departing. I feel like go is a good middleground for small to mid size projects and the blazing fast compilation is definetely something I would miss. 
+I am not sure how much further I want to dig into go. Although I want to look more into the concurrency model before departing. I feel like go is a good middle ground for small to mid size projects and the blazing fast compilation is definitely something I would miss. 
 
-In certain areas I whish go would get away even further from its C-ancestors, but maybe I will think differently once I checked out `Rust` 😊.
+In certain areas I wish go would get away even further from its C-ancestors, but maybe I will think differently once I checked out `Rust` 😊.
 
 But for now, go remains my `goto`-language 😉 when it comes to AWS lambda functions. IMHO it's the best in the pool of natively supported languages. It is statically typed, compiled, safe and blazing fast.
