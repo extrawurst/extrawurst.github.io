@@ -1,8 +1,7 @@
 ---
-title:  "alexa skill in go"
-date:   2018-12-06 9:00:00
+title:  "make alexa toast in go"
+date:   2018-12-15 9:00:00
 categories: [general]
-published: false
 ---
 
 I always looked for a chance to dig into the `go` programming language. Recently I found the perfect opportunity: writing an **Alexa Skill in go**!
@@ -63,6 +62,8 @@ I ended up checking for `err != nil` everywhere and felt like it is tempting to 
 
 ## Alexa skills in go
 
+My usecase for go was writing an Alexa Skill, remember?
+
 Unfortunately AWS does not offer an off-the-shelve SDK for alexa skills in go like it does for javascript but thanks to open source this does not matter much: [alexa-skills-kit-golang](https://github.com/ericdaugherty/alexa-skills-kit-golang)
 
 Therefore writing a skill in go is similarly easy: 
@@ -77,6 +78,8 @@ func (h *HelloWorld) OnLaunch(ctx context.Context, request *alexa.Request, sessi
 ```
 
 Fortunately accessing other AWS services like DynamoDB is even more easy, there is an official SDK: [aws-sdk-go](https://github.com/aws/aws-sdk-go)
+
+Why do I need DynamoDB access? Because I need to persist the last jokes my skill response uses to not repeat her over and over again but prefer not used sentences.
 
 ## Conclusion
 
