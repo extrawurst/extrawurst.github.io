@@ -16,7 +16,7 @@ Why did I feel the urge to look into go? Because I like to keep up to date with 
 One other reason why I chose go was: **AWS lambda support** - out of a bunch of scripting/VM based languages go was the only system programming language that is natively supported. Alexa Skills are best developed on lambda and since I was fed up using JS it was go this time.
 
 go is a tool in a toolbox, this particular one is trying to be a system programming language (no VM) and to be more modern than crusty old C/C++. 
-Like any other tool, it is solving a particular purpose. go's primary purpose is to be *modern* (having a GC and all) while still cater the needs of system developers (*runtime speed* and statically typed'ness) and still be attractive to script programmers (fast iteration - aka. *quick compilation*). On top of that, go wants to simplify *concurrency* (don't dare to call it [parallelism](https://www.youtube.com/watch?v=cN_DpYBzKso)) with build in support for coroutines (ahem, I mean goroutines) and message passing using channels.
+Like any other tool, it is solving a particular purpose. go's primary purpose is to be *modern* (having a GC and all) while still cater the needs of system developers (*runtime speed* and statically typed'ness) and still be attractive to script programmers (fast iteration - aka. *quick compilation*). On top of that, go wants to simplify *concurrency* (don't dare to call it [parallelism](https://www.youtube.com/watch?v=cN_DpYBzKso)) with built in support for coroutines (ahem, I mean goroutines) and message passing using channels.
 
 ## First impressions
 
@@ -43,7 +43,7 @@ Like any other tool, it is solving a particular purpose. go's primary purpose is
 
 For me, the lack of generics was the biggest downer because it introduces other disadvantages. For example, I was looking for a HashSet implementation in go - guess what: does not exist - because of missing generics. If you need such a container, write it exactly for the one type that you need it for.
 
-This means that for most things you either take build-in stuff or you have to write it specially tailored for yourself - I ended up abusing `map` as a HashSet 🙈.
+This means that for most things you either take built in stuff or you have to write it specially tailored for yourself - I ended up abusing `map` as a HashSet 🙈.
 
 ### Error handling
 
@@ -64,7 +64,7 @@ I ended up checking for `err != nil` everywhere and felt like it is tempting to 
 
 My usecase for go was writing an Alexa Skill, remember?
 
-Unfortunately AWS does not offer an off-the-shelve SDK for alexa skills in go like it does for javascript but thanks to open source this does not matter much: [alexa-skills-kit-golang](https://github.com/ericdaugherty/alexa-skills-kit-golang)
+Unfortunately AWS does not offer an off-the-shelf SDK for alexa skills in go like it does for javascript but thanks to open source this does not matter much: [alexa-skills-kit-golang](https://github.com/ericdaugherty/alexa-skills-kit-golang)
 
 Therefore writing a skill in go is similarly easy: 
 ```
@@ -77,7 +77,7 @@ func (h *HelloWorld) OnLaunch(ctx context.Context, request *alexa.Request, sessi
 }
 ```
 
-Fortunately accessing other AWS services like DynamoDB is even more easy, there is an official SDK: [aws-sdk-go](https://github.com/aws/aws-sdk-go)
+Fortunately accessing other AWS services like DynamoDB is even easier, there is an official SDK: [aws-sdk-go](https://github.com/aws/aws-sdk-go)
 
 Why do I need DynamoDB access? Because I need to persist the last jokes my skill response uses to not repeat her over and over again but prefer not used sentences.
 
