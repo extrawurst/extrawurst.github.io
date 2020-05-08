@@ -1,1 +1,1 @@
-jekyll serve --unpublished --config _config.local.yml
+docker run --rm --label=jekyll --volume="$PWD":/srv/jekyll -it -p 4000:4000 jekyll/jekyll jekyll serve --unpublished --future --config _config.local.yml 
