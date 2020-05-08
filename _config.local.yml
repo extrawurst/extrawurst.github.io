@@ -26,10 +26,10 @@ links:
   - github-square: "https://github.com/extrawurst"
   - twitter-square: "https://twitter.com/extrawurst"
   - linkedin-square: "https://www.linkedin.com/profile/view?id=136842864"
-  - xing-square: "https://www.xing.com/profile/Stephan_Dilly"
-  - youtube-square: "https://www.youtube.com/user/ExtrawurstGames"
-  - google-plus-square: "https://plus.google.com/u/0/+StephanDilly"
   - slideshare: "http://www.slideshare.net/Extrawurst"
+
+gems:
+  - jekyll-sitemap
 
 excerpt_separator: "\n\n\n"
 defaults: [{scope: {path: ""}, values: {layout: "default"}}, {scope: {path: "", type: "posts"}, values: {comments: true}}]
