@@ -8,7 +8,7 @@ Today it is time to announce [gitui](https://github.com/extrawurst/gitui):
 
 ![s0]({{ site.url }}/assets/gitui/s00-diff.png)
 
-Over the last couple of weeks my side project was this little tool and some may know it from the occasional tweet about it already:
+Over the last couple of weeks, my side project was this little tool and some may know it from the occasional tweet already:
 
 <blockquote class="twitter-tweet tw-align-center"><p lang="en" dir="ltr">gitui - my little <a href="https://twitter.com/hashtag/git?src=hash&amp;ref_src=twsrc%5Etfw">#git</a> terminal tool written in <a href="https://twitter.com/hashtag/rustlang?src=hash&amp;ref_src=twsrc%5Etfw">#rustlang</a> now supports staging/unstaging parts of a diff (hunks) and much more <a href="https://t.co/tuNcfsesfq">pic.twitter.com/tuNcfsesfq</a></p>&mdash; Stephan Dilly (@Extrawurst) <a href="https://twitter.com/Extrawurst/status/1252654046269366272?ref_src=twsrc%5Etfw">April 21, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
@@ -35,7 +35,7 @@ Over the last couple of weeks my side project was this little tool and some may 
 **Q**: Why not build yet another GUI application?  
 **A**: GUI applications are complex, most of them are not free because of this. If you do most of your work in the terminal, its natural not to have to leave it for your git interaction. Plus it gives me this nice nostalgic feeling ;).
 
-**Q**: Isn't there already such a tool?
+**Q**: Isn't there already such a tool?  
 **A**: The idea of a terminal UI for git isn't new, there is great examples out there: [tig](https://github.com/jonas/tig) and [lazygit](https://github.com/jesseduffield/lazygit)
 They are both awesome and inspired me but either I found them too slow/resource-hungry in some areas or too complicated to use and navigate in others. (maybe a little [NIH-syndrome](https://en.wikipedia.org/wiki/Not_invented_here) as well).
 
@@ -65,7 +65,7 @@ Of course `gitui` is not re-inventing the wheel at all. It is standing on the sh
 | what | why |
 | -- | -- |
 | [crossterm](https://github.com/crossterm-rs/crossterm) + [tui-rs](https://github.com/fdehau/tui-rs) | crossterm is a cross platform terminal library and tui-rs builds an immediate mode UI layer on top of that |
-| [git2-rs](https://github.com/rust-lang/git2-rs) | git2-rs is a rust wrapper on top of [libgit2]() allowing to work with git natively (not having to call the commandline) |
+| [git2-rs](https://github.com/rust-lang/git2-rs) | git2-rs is a rust wrapper on top of [libgit2](https://libgit2.org) allowing to work with git natively (not having to call the commandline) |
 | [rayon](https://github.com/rayon-rs/rayon) | on the topic of concurrency: `gitui` uses rayon for its threadpool |
 | [crossbeam](https://github.com/crossbeam-rs/crossbeam) | more concurrency: crossbeam allows waiting (selecting) multiple channels in parallel |
 
