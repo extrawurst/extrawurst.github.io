@@ -2,7 +2,6 @@
 title:  "terminal ui for git written in rust"
 date:   2020-05-08 17:00:00
 categories: [general]
-published: false
 ---
 
 Today it is time to announce [gitui](https://github.com/extrawurst/gitui):
