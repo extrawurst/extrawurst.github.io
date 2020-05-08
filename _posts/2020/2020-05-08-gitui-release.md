@@ -15,11 +15,11 @@ Over the last couple of weeks my side project was this little tool and some may 
 
 # What?
 
-`gitui` is becoming my GUI alternative for using git. So far it only supports a few features but my goal is to extend it as needed. My focus is not to build a git cli substitute though, gitui is supposed to help out on tasks that are cumbersome todo on the cli for pure mortals like me. The main features so far:
+`gitui` is becoming my GUI alternative for using git. So far it only supports a few features but my goal is to extend it as needed. My focus is not to build a git cli substitute though, gitui is supposed to help out on tasks that are cumbersome to do on the cli for pure mortals like me. The main features so far:
 
-* staging parts of files (hunks)
+* staging parts of files ((c)hunks)
 * browsing the commit history
-* inspectint large diffs/changesets
+* inspecting large diffs/changesets
 * reverting changes
 * staging/unstaging file trees
 * written in **Rust** for safety and speed
@@ -34,39 +34,39 @@ Over the last couple of weeks my side project was this little tool and some may 
 **A**: I tried a lot of them, they do much *more than I need*, tend to be super *slow* and grinding to a halt on bigger repos and one after the other starts to cost money.
 
 **Q**: Why not build yet another GUI application?  
-**A**: GUI applications are complex, most of them are not free because of this. If you do most of your work in the terminal, its natural not to have to leave it for your git interaction. Plus it gives me this nice nostalgic feeling ;)
+**A**: GUI applications are complex, most of them are not free because of this. If you do most of your work in the terminal, its natural not to have to leave it for your git interaction. Plus it gives me this nice nostalgic feeling ;).
 
 **Q**: Isn't there already such a tool?
 **A**: The idea of a terminal UI for git isn't new, there is great examples out there: [tig](https://github.com/jonas/tig) and [lazygit](https://github.com/jesseduffield/lazygit)
-They are both awesome and inspired me but either I found them too slow/resource-hungry in some areas or too complicated to use and navigate in others. (maybe a little [NIH-Syndrom](https://en.wikipedia.org/wiki/Not_invented_here) aswell)
+They are both awesome and inspired me but either I found them too slow/resource-hungry in some areas or too complicated to use and navigate in others. (maybe a little [NIH-syndrome](https://en.wikipedia.org/wiki/Not_invented_here) as well).
 
 **Q**: Why in *Rust*?  
-**A**: I started using Rust two years ago, first out of fun, then professionally and sofar there was no project to build something out in the open. `gitui` gave me the opportunity to opensource something build in Rust and I think it's a great fit for the kind of tool it is:
+**A**: I started using Rust two years ago, first out of fun, then professionally and so far there was no project to build something out in the open. `gitui` gave me the opportunity to opensource something built in Rust and I think it's a great fit for the kind of tool it is.
 
 # Benefits of using Rust
 
 **Disclaimer**: First of all, of course `gitui` could have been written in any language. I don't want to start language wars here.
 
-My personal backround is that I started out as a C++ programmer, system programming languages always appealed to me. Still I appreciated the comfort of managed systems like Java, C#, Node/Javascript and lately also Go. Over the years I kept watching out for something though that combined the strength of those two worlds. I think I found that in Rust:
+My personal background is that I started out as a C++ programmer, system programming languages always appealed to me. Still I appreciated the comfort of managed systems like Java, C#, Node/Javascript and lately also Go. Over the years I kept watching out for something though that combined the strength of those two worlds. I think I found that in Rust:
 
 1. **safety**
 	* Rust has a unique memory model that offers me bare metal control without sacrificing safety
 2. **speed**
-	* It is a system level languages, you can be as fast as C, people wrote os kernels in it, no GC, no pauses, the sky is the limit 🚀
+	* It is a system level language, you can be as fast as C, people wrote os kernels in it, no GC, no pauses, the sky is the limit 🚀
 3. **ergonomic**
 	* closures, generics, functional, abstraction, modularization - everything but inheritance
 4. **interop**
 	* seamless c interop allows to tap into a huge ecosystem of existing libraries and frameworks
 5. **ecosystem**
 	* cargo+rust == npm+nodejs == gradle+java
-	* I really don't know how I was surviving without such a rich and tighly integrated ecosystem of libraries in C/C++ before
+	* I really don't know how I was surviving without such a rich and tightly integrated ecosystem of libraries in C/C++ before
 
 Of course `gitui` is not re-inventing the wheel at all. It is standing on the shoulders of giants using the following major dependencies:
 
 | what | why |
 | -- | -- |
-| [crossterm](https://github.com/crossterm-rs/crossterm) + [tui-rs](https://github.com/fdehau/tui-rs) | crossterm is a cross platform terminal library and tui-rs builds a immediate mode UI layer on top of that |
-| [git2-rs](https://github.com/rust-lang/git2-rs) | git2-rs is a rust wrapper on top of [libgit2]() allowing to work with git natively (not havin to call the commandline) |
+| [crossterm](https://github.com/crossterm-rs/crossterm) + [tui-rs](https://github.com/fdehau/tui-rs) | crossterm is a cross platform terminal library and tui-rs builds an immediate mode UI layer on top of that |
+| [git2-rs](https://github.com/rust-lang/git2-rs) | git2-rs is a rust wrapper on top of [libgit2]() allowing to work with git natively (not having to call the commandline) |
 | [rayon](https://github.com/rayon-rs/rayon) | on the topic of concurrency: `gitui` uses rayon for its threadpool |
 | [crossbeam](https://github.com/crossbeam-rs/crossbeam) | more concurrency: crossbeam allows waiting (selecting) multiple channels in parallel |
 
