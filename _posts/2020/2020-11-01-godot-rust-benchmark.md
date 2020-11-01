@@ -12,6 +12,10 @@ categories: [general,gamedev,rust]
 
 # The Contenders
 
+* gdscript
+* visual script
+* gdnative (rust)
+
 ## GDScript
 
 ```gd
