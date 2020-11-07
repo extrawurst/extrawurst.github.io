@@ -109,7 +109,7 @@ fn _draw(&self, owner: &CanvasItem) {
 
 # The Results
 
-I am not going to further comment on the ergonomics of either language. I really did this for two reasons: 1) can we do all we need in the visual script and 2) how does performance compare between the laternatives
+I am not going to further comment on the ergonomics of either language. I really did this for two reasons: 1) can we do all we need in the visual script and 2) how does performance compare between the alternatives
 
 Here are the timings:
 
