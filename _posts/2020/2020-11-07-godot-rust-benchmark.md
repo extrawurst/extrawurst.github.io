@@ -119,6 +119,8 @@ Here are the timings:
 | gdscript | ~5000 usec | 5x |
 | visual script | ~7000 usec | 7x |
 
+<sub><sup>(executed on a macbook 2016 3,3 GHz i7, 16 GB Ram, Intel Iris 550 and Godot 3.2.3)</sup></sub>
+
 On twitter people noted that this might change with Godot 4.0 and the support of type checking in gdscript. Thid could be interesting to measure once 4.0 is released. 
 
 For now my conclusion is:
