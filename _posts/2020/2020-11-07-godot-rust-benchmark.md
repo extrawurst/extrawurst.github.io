@@ -121,12 +121,12 @@ Here are the timings:
 
 <sub><sup>(executed on a macbook 2016 3,3 GHz i7, 16 GB Ram, Intel Iris 550 and Godot 3.2.3)</sup></sub>
 
-On twitter people noted that this might change with Godot 4.0 and the support of type checking in gdscript. Thid could be interesting to measure once 4.0 is released. 
+On twitter people noted that this might change with Godot 4.0 and the support of type checking in gdscript. This could be interesting to measure once 4.0 is released. 
 
 For now my conclusion is:
 
 * GDScript is easy and quick to learn
-* Visual Scripting in Godot works although feels a little instable
+* Visual Scripting in Godot works although it feels a little instable
 * Godot-Rust is a clear alternative to write entire Godot games in
 
 Of course point 3) is limited to people coming with a Rust background otherwise the Rust part in it is a clear challenge to learn first.
