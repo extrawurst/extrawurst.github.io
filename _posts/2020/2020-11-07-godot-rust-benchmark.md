@@ -1,6 +1,6 @@
 ---
 title:  "Benchmark Godot & Rust"
-date:   2020-11-07 19:30:00
+date:   2020-11-07 18:00:00
 categories: [general,gamedev,rust]
 ---
 
