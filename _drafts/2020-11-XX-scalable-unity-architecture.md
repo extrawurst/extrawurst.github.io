@@ -30,7 +30,7 @@ These three are not easy to achieve in an engine that is primarily inviting to r
 3. model / view / controller (MVC)
 4. unittests
 
-## Inversion of control
+## Inversion of Control
 
 The following diagram illustrates how tightly coupled components usually work:
 
@@ -38,39 +38,103 @@ The following diagram illustrates how tightly coupled components usually work:
 
 `ClassA` directly depends on `ServiceA`/`ServiceB`. This makes it harder to independently test `ClassA` without having to worry about the implementation details of the services.
 
-Dependency Injection is an approach to do *inversion of control*. The following graphic illustrates the previous example using DI:
+Dependency Injection (DI) is an approach to apply *inversion of control*. The following graphic illustrates the previous example using DI:
 
 ![di]({{ site.url }}/assets/unity-arch/di.png)
 
 DI is used as a *Builder* to generate our `ClassA`, inspecting the necessary dependencies and resolving these automatically. `ClassA` does not care what concrete class is used that implements the required `interface` as long as there is one.
 
-We settled on using [Zenject/Extenject](https://github.com/svermeulen/Extenject) to apply this pattern. It is reflection based but using the reflection-baking feature we can get rid of reflction related performance issues.
+We settled on using [Zenject/Extenject](https://github.com/svermeulen/Extenject) to apply this pattern. It is reflection based. Using the reflection-baking feature we can get rid of the reflection related performance impact.
+
+## Model-View-Controller
+
+The heart of this architecture is breaking up the code into seperate layers. The Model-View-Controller (MVC) design applied to Unity looks as follows:
+![mvc]({{ site.url }}/assets/unity-arch/mvc.png)
+
+Unity Monobehaviours live in the **View**-Layer and are supposed to shield the rest of the architecture from the hard to unittest elements of Unity. This layer only has access to the **Control**-Layer. The **View** creates instances of prefabs, uses `[SerializeField]` to use Unity typical drag/drop components. No logic is encoded in here, pure visualization of data only.
+
+The **Controller**-Layer contains the business logic and does the heavy lifting. This code is supposed to be testable, it does not depend on Unity **View** specifics. This layer still does not define the way data is stored in the **Model**-Layer, it is only controlling changes on it.
+
+The **Model** contains the actual Data, this might be ephemeral, on disk or in some backend. Usually these Models are Plain-Old-Data types.
+
+Since the **View** should not poll for changes on the data we use *Message Passing* to notify it. This way we can keep the Layers decoupled and still contain performance.
 
 ## Message Passing
 
+The above design relies on appropriate notification messages so that the View-Layer can subscribe and react to changes/events:
 ![messagebus]({{ site.url }}/assets/unity-arch/messagebus.png)
 
-* Zenject Signals
+We are using [Zenject Signals](https://github.com/modesttree/Zenject/blob/master/Documentation/Signals.md).
 
-## MVC
+The following code example shows usage of it:
 
-![mvc]({{ site.url }}/assets/unity-arch/mvc.png)
+```cs
+struct MessageType {}
 
-* M + C + Unity
-* TODO
+bus.Subscribe<MessageType>(()=>Debug.Log("Msg received"));
 
-## Unittests
+bus.Fire<MessageType>();
+```
 
-* NUnit
-* NSubstitude
+It is important to note that Signals are supposed to be *lightweight* and do not contain *Data* - we use the rest of the MVC-Layers for this. Signals are a tool for pure notification, event propagation and decoupling.
 
-# Next steps
+## Unittesting
+
+Based on all the efforts above we can now write unittests for almost all of our game (business) logic.
+
+On the technical side of writing those tests we use the Unity standard [NUnit](https://nunit.org) framework and [NSubstitute](https://nsubstitute.github.io) as a mocking solution.
+
+Let's have a look at one of our tests:
+
+```cs
+var level = Substitute.For<ILevel>();
+var buildings = Substitute.For<IBuildings>();
+
+// test subject: 
+var build = new BuildController(null,buildings,level);
+
+// smoke test
+Assert.AreEqual(0, build.GetCurrentBuildCount());
+
+// assert that `GetCurrent` was exactly called once
+level.ReceivedWithAnyArgs(1).GetCurrent();
+```
+
+The above test is only making sure the controller behaves correctly when fed with default data. You can still learn how we are using *NSubstitute* to mock dependencies and later even assert that specific methods were called on these.
+
+Let us look at a more intersting example of actually building something on slot `0`:
+
+```cs
+var level = Substitute.For<ILevel>();
+var buildings = new MockBuildingModel();
+var bus = _container.Resolve<SignalBus>();
+var buildCommandSent = false;
+bus.Subscribe<BuildingBuild>(() => buildCommandSent = true);
+
+// test subject: 
+var build = new BuildController(bus,buildings,level);
+
+build.Build(0);
+
+Assert.AreEqual(1, build.GetCurrentBuildCount());
+
+// assert signals was fired
+Assert.IsTrue(buildCommandSent);
+```
+
+Now you see how we can make sure the expected signal was even fired and that our `GetCurrentBuildCount` returns the correct new building count.
+
+These sort of tests are inexpensive to run and keep the integrity of our game logic because we check that those are green even before building a new test version.
+
+# Conclusion
 
 This was just a 20.000ft view on this topic. 
 Let's recap:
 
 We want to be able to write testable code, therefore we decouple unity as much as possible from our business logic, we communicate to unity via messages, we have a clear interface from Unity how to access data. With this we have a small surface area of what is unity specific and cannot be tested (lets ignore playmode tests for now).
 
-* mocking scenes
-* fake backends
-* promises
+In future articles we will write a concrete example game to apply the above system and furthermore look how to combine this architecture with:
+
+* mocking scenes for ui testing
+* fake backends and third party SDKs
+* promises for maintainable async code
