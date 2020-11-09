@@ -13,7 +13,9 @@ For a long time I wanted to write this up to bring it into a sharable format.
 
 This article is an update to a talk I gave at [GDC in 2017](https://www.gdconf.com) ("Data Binding Architectures for Rapid UI Creation in Unity").
 
-**Disclaimer:** Of course these are only best practices that worked for me and reflect my experience and opinion, these are no silver bullets for everything and definitely not the right approach for every project or team.
+**Disclaimer:** Of course these are only best practices that worked for me and reflect my experience and opinion, these are no silver bullets for everything and definitely not the right approach for every project or team. 
+
+**Disclaimer2**: After writing this people made me aware that we are in good company with this approach since Kolibri Games applies something similar aswell: [Blog Post](https://www.kolibrigames.com/blog/making-games-the-lean-way-part-1/)
 
 # The Architecture
 
