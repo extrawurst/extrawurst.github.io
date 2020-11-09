@@ -115,11 +115,11 @@ Here are the timings:
 
 | type | usecs | slowdown | 
 |---|---|---|
-| gdnative (rust) | ~1000 usec | - |
-| gdscript | ~5000 usec | 5x |
-| visual script | ~7000 usec | 7x |
+| gdnative (rust) | ~980 usec | - |
+| gdscript | ~5112 usec | 5x |
+| visual script | ~7099 usec | 7x |
 
-<sub><sup>(executed on a macbook 2016 3,3 GHz i7, 16 GB Ram, Intel Iris 550 and Godot 3.2.3)</sup></sub>
+<sub><sup>(executed on a macbook 2016 3,3 GHz i7, 16 GB Ram, Intel Iris 550 and Godot 3.2.3, avg. over 10 runs)</sup></sub>
 
 On twitter people noted that this might change with Godot 4.0 and the support of type checking in gdscript. This could be interesting to measure once 4.0 is released. 
 
