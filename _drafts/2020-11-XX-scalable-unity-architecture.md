@@ -1,6 +1,6 @@
 ---
 title:  "Scalable Architecture for Unity Games"
-date:   2020-11-08 10:00:00
+date:   2020-11-10 13:00:00
 categories: [gamedev,unity,programming]
 draft: true
 ---
@@ -8,6 +8,8 @@ draft: true
 # Vision
 
 Over the years and over the course of many projects a certain way to structure a game project in Unity emerged that proved particularly scalable (maintainable).
+
+![overview]({{ site.url }}/assets/unity-arch/overview.jpeg)
 
 For a long time I wanted to write this up to bring it into a sharable format.
 
