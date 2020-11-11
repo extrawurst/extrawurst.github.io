@@ -26,7 +26,7 @@ The main goals of this architecture are:
 * extensibility
 * testability
 
-These three are not easy to achieve in an engine that is primarily inviting to rapid prototyping. The common conception among game developers is that these principles are more relevant to business solutions than in games and I strongly disagree. Games became more and more software as a service businesses. Allowing us to look at solutions in such areas we find that there is actually tools that we can apply to gaming aswell.
+These three are not easy to achieve in an engine that is primarily inviting to rapid prototyping. The common conception among game developers is that these principles are more relevant to business solutions than in games and I strongly disagree. Games became more and more software as a service businesses. Allowing us to look at solutions in such areas we find that there are actually tools that we can apply to gaming as well.
 
 1. inversion of control
 2. message passing
@@ -107,20 +107,19 @@ Assert.AreEqual(0, build.GetCurrentBuildCount());
 level.ReceivedWithAnyArgs(1).GetCurrent();
 ```
 
-The above test is only making sure the controller behaves correctly when fed with default data. You can still learn how we are using *NSubstitute* to mock dependencies and later even assert that specific methods were called on these.
+The above test is making sure the controller behaves correctly when fed with default data. You see how we are using *NSubstitute* to mock dependencies and even assert that specific methods were called on these.
 
 Let us look at a more intersting example of actually building something on slot `0`:
 
 ```cs
 var level = Substitute.For<ILevel>();
-var buildings = new MockBuildingModel();
 var bus = _container.Resolve<SignalBus>();
 var buildCommandSent = false;
 bus.Subscribe<BuildingBuild>(() => buildCommandSent = true);
 
-// test subject: 
-var build = new BuildController(bus,buildings,level);
-
+// test subject 
+var build = new BuildController(bus,new BuildingsModel(),level);
+// test call
 build.Build(0);
 
 Assert.AreEqual(1, build.GetCurrentBuildCount());
@@ -129,7 +128,7 @@ Assert.AreEqual(1, build.GetCurrentBuildCount());
 Assert.IsTrue(buildCommandSent);
 ```
 
-Now you see how we can make sure the expected signal was even fired and that our `GetCurrentBuildCount` returns the correct new building count.
+Now you see how we can make sure the expected signal was fired and that our `GetCurrentBuildCount` returns the correct new building count.
 
 These sort of tests are inexpensive to run and keep the integrity of our game logic because we check that those are green even before building a new test version.
 
