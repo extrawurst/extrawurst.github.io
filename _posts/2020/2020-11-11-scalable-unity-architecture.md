@@ -1,8 +1,7 @@
 ---
 title:  "Scalable Architecture for Unity Games"
-date:   2020-11-10 13:00:00
+date:   2020-11-11 11:00:00
 categories: [gamedev,unity,programming]
-draft: true
 ---
 
 # Vision
@@ -63,6 +62,8 @@ The **Model** contains the actual Data, this might be ephemeral, on disk or in s
 
 Since the **View** should not poll for changes on the data we use *Message Passing* to notify it. This way we can keep the Layers decoupled and still contain performance.
 
+> The decision whether a *view* reads the data right out of the *model* or through a controller is made non-dogmatic. The only rule is: *Changes* only happen via the control-layer. Reading values *can* happen straight out of the Model.
+
 ## Message Passing
 
 The above design relies on appropriate notification messages so that the View-Layer can subscribe and react to changes/events:
@@ -81,6 +82,8 @@ bus.Fire<MessageType>();
 ```
 
 It is important to note that Signals are supposed to be *lightweight* and do not contain *Data* - we use the rest of the MVC-Layers for this. Signals are a tool for pure notification, event propagation and decoupling.
+
+> **Alternatives** to this are using tools like [UniRx](https://github.com/neuecc/UniRx) to observe model-data-changes but I prefer to have more fine grained control over when we want the change to be notified instead of allowing the view to see every individual value change. This sort of decision over *when* to notify belongs into the controller-layer and therefore the signaling approach fits nicely.
 
 ## Unittesting
 
@@ -139,6 +142,7 @@ We want to be able to write testable code, therefore we decouple unity as much a
 
 In future articles we will write a concrete example game to apply the above system and furthermore look how to combine this architecture with:
 
+* practical example applying the approach
 * mocking scenes for ui testing
 * fake backends and third party SDKs
 * promises for maintainable async code
