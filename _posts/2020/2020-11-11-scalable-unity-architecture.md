@@ -52,7 +52,7 @@ We settled on using [Zenject/Extenject](https://github.com/svermeulen/Extenject)
 ## Model-View-Controller
 
 The heart of this architecture is breaking up the code into seperate layers. The Model-View-Controller (MVC) design applied to Unity looks as follows:
-![mvc]({{ site.url }}/assets/unity-arch/mvc.png)
+![mvc]({{ site.url }}/assets/unity-arch/mvc.jpg)
 
 Unity Monobehaviours live in the **View**-Layer and are supposed to shield the rest of the architecture from the hard to unittest elements of Unity. This layer only has access to the **Control**-Layer. The **View** creates instances of prefabs, uses `[SerializeField]` to use Unity typical drag/drop components. No logic is encoded in here, pure visualization of data only.
 
