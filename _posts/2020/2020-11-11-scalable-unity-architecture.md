@@ -128,7 +128,12 @@ Assert.AreEqual(1, build.GetCurrentBuildCount());
 Assert.IsTrue(buildCommandSent);
 ```
 
-Now you see how we can make sure the expected signal was fired and that our `GetCurrentBuildCount` returns the correct new building count.
+Now we check that our `GetCurrentBuildCount` returns the correct new building count after succesfully building on slot `0`. We also expect the right signal to be sent to the bus - this way the relevant *view* can refresh.
+
+> "wait a minute, the one thing coming from Zenject can't be mocked?"
+<sub><sup>(very well pointed out by my good friend Peter 😊)</sup></sub>
+
+Yes unfortunately `SignalBus` does not come with an interface that we can feed to NSubstitute - therefore we have to actually subscribe and check if the right signal was fired.
 
 These sort of tests are inexpensive to run and keep the integrity of our game logic because we check that those are green even before building a new test version.
 
