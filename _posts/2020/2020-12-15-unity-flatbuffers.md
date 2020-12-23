@@ -30,6 +30,10 @@ Using Flatbuffers gives us two main advantages:
 1. Data is stored in binary form making it easy on the bandwidth
 2. Accessing Data is very fast since it is just a lookup from contigous memory
 
+The following graphic visualizes this:
+
+![fb]({{ site.url }}/assets/flatbuffers/flatbuffers.png)
+
 Flatbuffers store data in a contigous chunk of memory making it also easy on the garbage collector that especially in our use case was trashed with a lot of small allocations.
 
 If you mainly read your data from a buffer and do not need to alter it (our exact use case) it escentially reduces allocations to zero (for reusing a static buffer).
