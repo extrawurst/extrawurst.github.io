@@ -20,7 +20,7 @@ You are looking to simplify your life integrating flatbuffers in Unity? Look no 
 
 # Context
 
-Our recent game *Wheelie Royale* ([Appstore](https://apps.apple.com/US/app/id1518264893) / [Playstore](https://play.google.com/store/apps/details?id=com.gameroasters.wheelieroyale&hl=en&gl=US)) downloads a lot of replay data by other players. Replay data is stored in JSON format. In the most extreme cases up to 16mb of JSON for a single level.
+Our recent game *Wheelie Royale* ([Appstore](https://apps.apple.com/US/app/id1518264893) / [Playstore](https://play.google.com/store/apps/details?id=com.gameroasters.wheelieroyale&hl=en&gl=US)) downloads a lot of replay data by other players. Replay data is stored in JSON format. In the most extreme cases up to 15mb of JSON for a single level.
 While this is already a problem just because of mobile data usage it manifest even more severly in mid- to low-end devices when deserializing the JSON data.
 
 After digging out my low-end test device (Galaxy S4) it took [Newtonsoft.JSON](https://www.newtonsoft.com/json) **20 sec** to deserialize the 15mb. This is bad and for some players it even went up to a minute - an absoulte dealbreaker.
