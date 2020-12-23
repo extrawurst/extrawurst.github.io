@@ -31,7 +31,7 @@ Obviously we had to find a better method entirely.
 
 > FlatBuffers is an efficient cross platform serialization library ([flatbuffers website](https://google.github.io/flatbuffers/))
 
-Initially a google internal project for game development it received some fame when facebook announced massive performance gains by utilzing it on their mobile app ([article](https://engineering.fb.com/2015/07/31/android/improving-facebook-s-performance-on-android-with-flatbuffers/)).
+Initially a google internal project for game development it received some fame when facebook announced massive performance gains by utilizing it on their mobile app ([article](https://engineering.fb.com/2015/07/31/android/improving-facebook-s-performance-on-android-with-flatbuffers/)).
 
 Using Flatbuffers gives us two main advantages:
 
