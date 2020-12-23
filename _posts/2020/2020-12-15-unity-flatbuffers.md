@@ -147,7 +147,7 @@ Here is a very nice comparison matrix: https://capnproto.org/news/2014-06-17-cap
 
 The main benefit for **protobuf** is that it does the extra step of creating POD objects for you making it even closer to what you are used to in regular JSON deserialization. It is a good tradeoff between the speed (Flatbuffers) and convenience (JSON).
 
-The other alternative is actually made by the same guy as protobuf and uses the same zero-allocation approach Flatbuffers use but does not support as many languages yet - thats the only reason I did not consider giving **cap'n'proto** a try.
+The other alternative is actually made by the [same guy](https://stackoverflow.com/a/25370932/1397367) as protobuf and uses the same zero-allocation approach Flatbuffers use but does not support as many languages yet - thats the only reason I did not consider giving **cap'n'proto** a try.
 
 # Further Resources
 
