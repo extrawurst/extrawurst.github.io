@@ -14,6 +14,10 @@ In this this article you are going to learn:
 * *how* you can do that yourself
 * what *benefit* we gained
 
+**TL;DR**
+
+You are looking to simplify your life integrating flatbuffers in Unity? Look no further: [gameroasters/flatbuffers-unity](https://github.com/gameroasters/flatbuffers-unity-docker)
+
 # Context
 
 Our recent game *Wheelie Royale* ([Appstore](https://apps.apple.com/US/app/id1518264893) / [Playstore](https://play.google.com/store/apps/details?id=com.gameroasters.wheelieroyale&hl=en&gl=US)) downloads a lot of replay data by other players. Replay data is stored in JSON format. In the most extreme cases up to 16mb of JSON for a single level.
@@ -24,6 +28,10 @@ After digging out my low-end test device (Galaxy S4) it took [Newtonsoft.JSON](h
 Obviously we had to find a better method entirely.
 
 # Flatbuffers
+
+> FlatBuffers is an efficient cross platform serialization library ([flatbuffers website](https://google.github.io/flatbuffers/))
+
+Initially a google internal project for game development it received some fame when facebook announced massive performance gains by utilzing it on their mobile app ([article](https://engineering.fb.com/2015/07/31/android/improving-facebook-s-performance-on-android-with-flatbuffers/)).
 
 Using Flatbuffers gives us two main advantages:
 
@@ -38,16 +46,19 @@ Flatbuffers store data in a contigous chunk of memory making it also easy on the
 
 If you mainly read your data from a buffer and do not need to alter it (our exact use case) it escentially reduces allocations to zero (for reusing a static buffer).
 
-## Outcome
+## Comparison
 
 - **Before**: Deserializing 15mb of Json in **20 secs**
 - **After**: Parsing the same data but using Flatbuffers (4mb) in **0,5 sec**
 
-This is a speed improvement of **40x**
+This is a speed improvement of **40x**.
+
+**Disclaimer**: Of course this is not a proper scientific benchmarking method but hold true even our modern iPhones (albeit on a much smaller scale). I leave the more scientific methods of benchmarking people smarter than me: 
+[benchmark](https://google.github.io/flatbuffers/flatbuffers_benchmarks.html)
 
 # Flatbuffers Schema
 
-Here is a simplified version of our schema file: 
+Here is a simplified version of our schema file. Keep in mind that we are dealing with playbacks (ghosts) of other players. Each ghost consists of a TON of deltas (Sample) that allow us to replay them.
 
 ```fbs
 struct Sample {
@@ -140,5 +151,4 @@ The other alternative is actually made by the same guy as protobuf and uses the 
 
 # Further Resources
 
-* [Improving Facebook’s performance on Android with FlatBuffers](https://engineering.fb.com/2015/07/31/android/improving-facebook-s-performance-on-android-with-flatbuffers/) (Article)
 * [Bringing FlatBuffers Zero-Copy Serialization to Rust by Robert Winslow](https://www.youtube.com/watch?v=YsiQDX20lXI) (Video)
