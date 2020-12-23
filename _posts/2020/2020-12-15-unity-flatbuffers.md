@@ -42,9 +42,10 @@ The following graphic visualizes this:
 
 ![fb]({{ site.url }}/assets/flatbuffers/flatbuffers.png)
 
-Flatbuffers store data in a contiguous chunk of memory making it also easy on the garbage collector that especially in our use case was trashed with a lot of small allocations.
-
+Flatbuffers store data in a **contiguous** chunk of memory making it also easy on the garbage collector that especially in our use case was trashed with a lot of small allocations.
 If you mainly read your data from a buffer and do not need to alter it (our exact use case) it escentially reduces allocations to zero (for reusing a static buffer).
+
+Aside the compact memory layout Flatbuffers reduces the memory consumption by expecting both parties to know the schema. We later see how we generate code for client and backend to be able to speak the same *language*.
 
 ## Comparison
 
