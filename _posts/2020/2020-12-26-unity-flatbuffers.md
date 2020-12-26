@@ -1,8 +1,7 @@
 ---
-title:  "Flatbuffers in Unity for ~40x gain"
-date:   2020-12-26 14:00:00
+title:  "Flatbuffers in Unity - a 40x gain"
+date:   2020-12-26 18:00:00
 categories: [gamedev,unity,programming,rust]
-draft: false
 ---
 
 # Problem
@@ -21,7 +20,7 @@ You are looking to simplify your life integrating Flatbuffers in Unity? Look no 
 
 # Context
 
-Our recent game *Wheelie Royale* ([Appstore](https://apps.apple.com/US/app/id1518264893) / [Playstore](https://play.google.com/store/apps/details?id=com.gameroasters.wheelieroyale&hl=en&gl=US)) downloads a lot of replay data by other players. Replay data is stored in JSON format. In the most extreme cases up to 15mb of JSON for a single level.
+Our recent game *Wheelie Royale* ([Appstore](https://apps.apple.com/US/app/id1518264893) / [Playstore](https://play.google.com/store/apps/details?id=com.gameroasters.wheelieroyale&hl=en&gl=US)) downloads a lot of replay data by other players. Replay data was transmitted in JSON format. In the most extreme cases up to 15mb of JSON for a single level.
 While this is already a problem just because of mobile data usage it manifests even more severly in mid- to low-end devices when deserializing the JSON data.
 
 After digging out my low-end test device (Galaxy S4) it took [Newtonsoft.JSON](https://www.newtonsoft.com/json) **20 sec** to deserialize the 15mb. This is bad and for some players it even went up to a minute - an absolute dealbreaker.
@@ -44,7 +43,7 @@ The following graphic visualizes this:
 ![fb]({{ site.url }}/assets/flatbuffers/fb.jpeg)
 
 Flatbuffers store data in a **contiguous** chunk of memory making it also easy on the garbage collector that especially in our use case was trashed with a lot of small allocations.
-If you mainly read your data from a buffer and do not need to alter it (our exact use case) it escentially reduces allocations to zero (for reusing a static buffer).
+If you mainly read your data from a buffer and do not need to alter it (our exact use case) it escentially reduces allocations to zero (reusing a static buffer).
 
 Aside the compact memory layout Flatbuffers reduces the memory consumption by expecting both parties to know the schema. We later see how we generate code for client and backend to be able to speak the same *language*.
 
@@ -86,11 +85,13 @@ table Ghosts {
 root_type Ghosts;
 ```
 
-Here you can see why our use case was particularly tough for the garbage collector in unity since we are dealing with a lot of small individually allocated objects.
+Here you can see why our use case was particularly tough for the garbage collector in Unity since we are dealing with a lot of small individually allocated objects.
+
+If you want to to more about the differences of `table` and `struct` you can find all details about the schema here: [Flatbuffers Schema](https://google.github.io/flatbuffers/flatbuffers_guide_writing_schema.html)
 
 ## Code generation
 
-When it comes to the pipeline required to get this working I was disappointed at how little was available: no easy docker container to get `flatc` (the schema transpiler) working cross platform, no ready built .net library for unity to get started. 
+When it comes to the pipeline required to get this working I was disappointed at how little was available: no easy docker container to get `flatc` (the schema transpiler) working cross platform, no ready built .net library for Unity to get started. 
 
 So I built this and open sourced it on our company github: [gameroasters/flatbuffers-unity](https://github.com/gameroasters/flatbuffers-unity-docker)
 
@@ -102,11 +103,11 @@ docker run -it -v $(shell pwd):/fb gameroasters/flatbuffers-unity:v1.12.0 /bin/b
 	flatc -r --gen-onefile schema.fbs"
 ```
 
-This will mount your current working directory into the container, it is expecting to find a `schema.fbs` file in here and generate the necessary code for *Rust* and *CSharp* for you in two file called `schema.rs` and `schema.cs`.
+This will mount your current working directory into the container, it is expecting to find a `schema.fbs` file in here and generate the necessary code for *Rust* and *CSharp* for you in two files called `schema.rs` and `schema.cs`.
 
 # Shortcomings
 
-Flatbuffers is not going to make your code more readable. Here is a little snippet how we read in stuff from it:
+Flatbuffers is not going to make your code more readable. Here is an example how we read in our ghosts from it:
 
 ```cs
 var fb_ghosts = GR.WR.Schema.Ghosts.GetRootAsGhosts(new ByteBuffer(data));
@@ -134,7 +135,7 @@ for (var i = 0; i < fb_ghosts.ItemsLength; i++)
 }
 ```
 
-Unlike some alternatives to Flatbuffers it does not create the Plain-Old-Data (POD) objects for you and deserialize into those. But that is by design because you could actually in such cases where you only need to read data go without them. 
+Unlike some alternatives to Flatbuffers it does not create the Plain-Old-Data (POD) objects for you and deserialize into those. But that is by design. You could actually go without them when you only need to access it for reading. 
 
 We only create those to keep the code compatible with the previous approach that deserialized JSON into POD objects.
 
@@ -147,9 +148,9 @@ Of course there are alternatives that I do not want to hide:
 
 Here is a very nice comparison matrix: https://capnproto.org/news/2014-06-17-capnproto-flatbuffers-sbe.html
 
-The main benefit for **protobuf** is that it does the extra step of creating POD objects for you making it even closer to what you are used to in regular JSON deserialization. It is a good tradeoff between the speed (Flatbuffers) and convenience (JSON). Another nice thing is: protobuf also speaks JSON which simplifies debugging a lot.
+The main benefit for **protobuf** is that it does the extra step of creating POD objects for you bringing it even closer to what you are used to in regular JSON deserialization. It is a good tradeoff between speed (Flatbuffers) and convenience (JSON). Another nice thing is: protobuf also speaks JSON which simplifies debugging a lot.
 
-The other alternative is actually made by the [same guy](https://stackoverflow.com/a/25370932/1397367) as protobuf and uses the same zero-allocation approach Flatbuffers use but does not support as many languages yet - thats the only reason I did not consider giving **cap'n'proto** a try.
+The other alternative - **cap'n'proto** - is actually made by the [same guy](https://stackoverflow.com/a/25370932/1397367) who made protobuf and uses the same zero-allocation approach Flatbuffers uses. **cap'n'proto** does not support as many languages yet - thats the only reason I did not consider giving it a try (yet).
 
 Ultimately there is no *best* solution, everything comes at a cost. If you need raw speed there is not much more you can get compared to Flatbuffers.
 
