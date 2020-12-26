@@ -1,22 +1,23 @@
 ---
 title:  "Flatbuffers in Unity for ~40x gain"
-date:   2020-12-15 12:00:00
+date:   2020-12-26 14:00:00
 categories: [gamedev,unity,programming,rust]
+draft: false
 ---
 
 # Problem
 
-We recently switched from downloading and parsing JSON in our Unity client to a binary format based on flatbuffers.
+We recently switched from downloading and parsing JSON in our Unity client to a binary format based on Flatbuffers.
 In this this article you are going to learn:
 
 * *why* we did that
-* *what* flatbuffers is anyway
+* *what* Flatbuffers is anyway
 * *how* you can do that yourself
 * what *benefit* we gained
 
 **TL;DR**
 
-You are looking to simplify your life integrating flatbuffers in Unity? Look no further: [gameroasters/flatbuffers-unity](https://github.com/gameroasters/flatbuffers-unity-docker)
+You are looking to simplify your life integrating Flatbuffers in Unity? Look no further: [gameroasters/flatbuffers-unity](https://github.com/gameroasters/flatbuffers-unity-docker)
 
 # Context
 
@@ -29,7 +30,7 @@ Obviously we had to find a better method entirely.
 
 # Flatbuffers
 
-> FlatBuffers is an efficient cross platform serialization library ([flatbuffers website](https://google.github.io/flatbuffers/))
+> FlatBuffers is an efficient cross platform serialization library ([Flatbuffers website](https://google.github.io/flatbuffers/))
 
 Initially a Google internal project for game development it received some fame when Facebook announced massive performance gains by utilizing it on their mobile app ([article](https://engineering.fb.com/2015/07/31/android/improving-facebook-s-performance-on-android-with-flatbuffers/)).
 
@@ -40,7 +41,7 @@ Using Flatbuffers gives us two main advantages:
 
 The following graphic visualizes this:
 
-![fb]({{ site.url }}/assets/flatbuffers/flatbuffers.png)
+![fb]({{ site.url }}/assets/flatbuffers/fb.jpeg)
 
 Flatbuffers store data in a **contiguous** chunk of memory making it also easy on the garbage collector that especially in our use case was trashed with a lot of small allocations.
 If you mainly read your data from a buffer and do not need to alter it (our exact use case) it escentially reduces allocations to zero (for reusing a static buffer).
@@ -133,7 +134,7 @@ for (var i = 0; i < fb_ghosts.ItemsLength; i++)
 }
 ```
 
-Unlike some alternatives to flatbuffers it does not create the Plain-Old-Data (POD) objects for you and deserialize into those. But that is by design because you could actually in such cases where you only need to read data go without them. 
+Unlike some alternatives to Flatbuffers it does not create the Plain-Old-Data (POD) objects for you and deserialize into those. But that is by design because you could actually in such cases where you only need to read data go without them. 
 
 We only create those to keep the code compatible with the previous approach that deserialized JSON into POD objects.
 
@@ -154,4 +155,4 @@ Ultimately there is no *best* solution, everything comes at a cost. If you need 
 
 # Further Resources
 
-* [Bringing FlatBuffers Zero-Copy Serialization to Rust by Robert Winslow](https://www.youtube.com/watch?v=YsiQDX20lXI) (Video)
+* [Bringing FlatBuffers Zero-Copy Serialization to Rust by Robert Winslow](https://www.youtube.com/watch?v=YsiQDX20lXI) (Meetup Video)
