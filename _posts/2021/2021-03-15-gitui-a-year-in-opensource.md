@@ -2,7 +2,6 @@
 title:  "GitUI - 1 year in open source"
 date:   2021-03-15 9:00:00
 categories: [general,programming,rust]
-draft: true
 ---
 
 # Time races
@@ -22,7 +21,7 @@ With every contributor you get a handful of issues and feature requests, some ma
 
 You learn to say **no**. Well technically it is more like a *nice idea, not high up on my list though, contributions welcome* instead of *no*.
 
-# What have I learned about open source?
+# Learnings
 
 My 10 most important take-aways:
 
@@ -37,7 +36,7 @@ My 10 most important take-aways:
 8. No hard feelings when people leave again, do not finish their work, do not show ownership, loose interest.
 9. Ask for help, it is surprising how humble-ness mobilizes people.
 
-# The numbers
+# In numbers
 
 **30 amazing contributors ❤️**
 
@@ -47,15 +46,13 @@ My 10 most important take-aways:
 
 ![stars]({{ site.url }}/assets/gitui-anniversary/stars.png)
 
-**all rust 🦀**
-
-![rust]({{ site.url }}/assets/gitui-anniversary/rust.png)
-
 **130 forks 🍴**
 
 ![forks]({{ site.url }}/assets/gitui-anniversary/forks.png)
 
-* over 1k commits
+**~18.000 lines of rust code 🦀**
+
+![loc]({{ site.url }}/assets/gitui-anniversary/loc.png)
 
 # The road to 1.0
 
