@@ -10,6 +10,10 @@ Exactly one year ago I commited the first version of [GitUI](https://github.com/
 
 ![demo]({{ site.url }}/assets/gitui-anniversary/demo.gif)
 
+# What is GitUI?
+
+GitUI is a terminal UI for git written in Rust and aiming to simplify common git tasks in a keyboard-only, cross platform and fast way without leaving your beloved text interface.
+
 # Time to reflect
 
 This project attracted way more attention than i anticipated and so I eventually found myself reviewing contributions by others❤️!
