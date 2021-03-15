@@ -6,7 +6,7 @@ categories: [general,programming,rust]
 
 # Time races
 
-Exactly one year ago I commited the first version of [GitUI](https://github.com/extrawurst/gitui) to Github. It's crazy how quickly the time past by and now we celebrate the first year anniversary🥳.
+Exactly one year ago I commited the first version of [GitUI](https://github.com/extrawurst/gitui) to Github. It's crazy how quickly the time passed by and now we celebrate the first year anniversary🥳.
 
 ![demo]({{ site.url }}/assets/gitui-anniversary/demo.gif)
 
@@ -16,8 +16,8 @@ This project attracted way more attention than i anticipated and so I eventually
 
 What a great feeling. This is why you publish something open source, right?
 
-Well it is a two bladed sword: 
-With every contributor you get a handful of issues and feature requests, some make sense, some are a interesting challenges, some are redicolous, some are just not important to you, still it is a good feeling to see your creation being noticed. 
+Well it is a double-edged sword: 
+With every contributor you get a handful of issues and feature requests, some make sense, some are interesting challenges, some are ridiculous, some are just not important to you, still it is a good feeling to see your creation being noticed. 
 
 You learn to say **no**. Well technically it is more like a *nice idea, not high up on my list though, contributions welcome* instead of *no*.
 
@@ -33,7 +33,7 @@ My 10 most important take-aways:
 5. At times its tempting to *just* accept a PR & finally move on - do not give in - keep your quality standard.
 6. Number 5. will annoy contributors that seek a quick'n'dirty *contributor* badge, but it is a good natural filter.
 7. It is a collosal enjoyment to see first time contributors grow to be a reliable source of support.
-8. No hard feelings when people leave again, do not finish their work, do not show ownership, loose interest.
+8. No hard feelings when people leave again, do not finish their work, do not show ownership, lose interest.
 9. Ask for help, it is surprising how humble-ness mobilizes people.
 
 # In numbers
