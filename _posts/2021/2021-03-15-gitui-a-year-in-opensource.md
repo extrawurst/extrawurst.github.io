@@ -60,7 +60,7 @@ My 10 most important take-aways:
 
 # The road to 1.0
 
-My initial goal was to match features that i found annoying in the regular git-cli. Use-cases that I resort to solve in GUIs like Fork. We have long passed that point thanks to contributions. Still I now formulated my top priorities to get done before being able to call gitui version **1.0**:
+My initial goal was to match features that i found annoying in the regular git-cli. Use-cases that I resort to solve in GUIs like Fork. We have long passed that point thanks to contributions. Still I now formulated my top priorities to get done before being able to call GitUI version **1.0**:
 
 * upstream branches 
 
