@@ -5,6 +5,7 @@ description: "Thoughts and random opinions of a Entrepeneur, Software Engineer a
 more: "more..."
 url: "http://127.0.0.1:4000"
 #baseurl: "/contrast" # comment out if in root directory
+future: true
 
 comments:
     disqus: "extrawurst"
@@ -25,7 +26,7 @@ style:
 links:
   - github-square: "https://github.com/extrawurst"
   - twitter-square: "https://twitter.com/extrawurst"
-  - linkedin-square: "https://www.linkedin.com/profile/view?id=136842864"
+  - linkedin-square: "https://www.linkedin.com/in/stephandilly"
   - slideshare: "http://www.slideshare.net/Extrawurst"
 
 gems:
